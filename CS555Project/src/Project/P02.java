@@ -1,3 +1,7 @@
+/*
+ * This is the same file as P02
+ * It is upload to github repository JermaineDing/CS555
+ */
 package Project;
 
 import java.io.BufferedReader;
