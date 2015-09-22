@@ -11,8 +11,8 @@ public class Individual {
 	private String givenName;
 	private String surName;
 	private char sex;
-	private Date birthDate;
-	private Date deathDate;
+	private String birthDate;
+	private String deathDate;
 	private char deceased;
 
 	// get id method
@@ -61,19 +61,19 @@ public class Individual {
 		this.givenName = givenName;
 	}
 
-	public Date getBirthDate() {
+	public String getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(Date birthDate) {
+	public void setBirthDate(String birthDate) {
 		this.birthDate = birthDate;
 	}
 
-	public Date getDeathDate() {
+	public String getDeathDate() {
 		return deathDate;
 	}
 
-	public void setDeathDate(Date deathDate) {
+	public void setDeathDate(String deathDate) {
 		this.deathDate = deathDate;
 	}
 
