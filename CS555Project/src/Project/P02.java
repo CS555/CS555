@@ -18,7 +18,6 @@ public class P02 {
 				"HUSB", "WIFE", "CHIL", "DIV", "DATE", "HEAD", "TRLR", "NOTE"};
 		try {
 			while((lineText = lineReader.readLine()) != null){
-				System.out.print("Line:");
 				System.out.println(lineText);
 				System.out.print("Level Number:");
 				System.out.println(lineText.charAt(0));
@@ -29,9 +28,6 @@ public class P02 {
 						flag = 1;
 						System.out.print("Tag Info:");
 						System.out.println(s);
-					}
-					else{
-						continue;
 					}
 				}
 				if(flag == 0){
