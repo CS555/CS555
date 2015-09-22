@@ -1,5 +1,7 @@
 package Data;
 
+import java.util.*;
+
 //class for family
 public class Family {
 
@@ -7,6 +9,8 @@ public class Family {
 	private String husband;
 	private String wife;
 	private String type;
+	private String weddingDate;
+	private String divorceDate;
 
 	public String getId() {
 
@@ -46,5 +50,26 @@ public class Family {
 	public void setWife(String wife) {
 		this.wife = wife;
 	}
+	
+	//return wedding date
+	public String getWeddingDate(){
+		return weddingDate;
+	}
+	
+	//get wedding date
+	public void setWeddingDate(String wdate){
+		this.weddingDate = wdate;
+	}
+	
+	//return divorce date
+	public String getDivorceDate(){
+		return divorceDate;
+	}
+		
+	//get wedding date
+	public void setDivorceDate(String ddate){
+		this.divorceDate = ddate;
+	}
+	
 
 }
