@@ -124,20 +124,8 @@ public class ProcessData {
 				Individual individualObject1 = individuals.get(i);
 				for(int j = 0; j < individuals.size(); j++){
 					Individual individualObject2 = individuals.get(j);
-					if (i == j){
-						continue;
-					}
-					else{
-						if(individualObject1.getId().equals(individualObject2.getId()) ){
-							System.out.println("ID1: @" + individualObject1.getId()+ "@" 
-						+ "Name: " +individualObject1.getName());
-							System.out.println("ID2: @" + individualObject2.getId()+ "@" 
-						+ "Name: " +individualObject2.getName());
-							System.out.println("Individual ID conflicting, error reported!");
-						}
-						else{
-							continue;
-						}
+					if (i != j){
+						ustor.Spr1_D(individualObject1, individualObject2);
 					}
 				}
 				System.out.println("ID: @" + individualObject1.getId() + "@");
@@ -157,11 +145,8 @@ public class ProcessData {
 				Family familyObject1 = families.get(i);
 				for(int j = 0; j < families.size(); j++){
 					Family familyObject2 = families.get(j);
-					if(i == j){
-						continue;
-					}
-					else{
-						ustor.Spr1OfD(familyObject1, familyObject2);
+					if(i != j){
+						ustor.Spr1_D(familyObject1, familyObject2);
 					}
 				}
 				System.out.println("ID:@" + familyObject1.getId() + "@");

@@ -1,11 +1,20 @@
 package Project;
 
 import Data.Family;
+import Data.Individual;
 
 
 
-public class Sprint1OfDing {
+public class Sprint1_Ding {
 		
+	public void uniqueId(Individual individualObject1,Individual individualObject2) {
+		
+		if(individualObject1.getId().equals(individualObject2.getId())) {
+			System.out.println("US22 error,same individual ID @" + individualObject1.getId() +
+					"with name: " + individualObject1.getName() + individualObject2.getName());
+		}	
+	}
+	
 	public void uniqueId(Family familyObject1,Family familyObject2) {
 		
 		if(familyObject1.getId().equals(familyObject2.getId())) {
