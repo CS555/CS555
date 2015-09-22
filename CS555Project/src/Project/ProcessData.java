@@ -12,7 +12,8 @@ public class ProcessData {
 
 	List<Individual> individuals = new ArrayList<Individual>();
 	List<Family> families = new ArrayList<Family>();
-
+	UserStories ustor = new UserStories();
+	
 	// get arguments
 	private String getArguments(String[] parseLine) {
 		String arguments = "";
@@ -160,29 +161,7 @@ public class ProcessData {
 						continue;
 					}
 					else{
-						if(familyObject1.getId().equals(familyObject2.getId())){
-							System.out.println("ID1: @" + familyObject1.getId()+ "@" );
-							System.out.println("ID2: @" + familyObject2.getId()+ "@" );
-							System.out.println("Family ID conflicting, error reported!");
-						}
-						else if(getIndividual(familyObject1.getWife())
-								.equals(getIndividual(familyObject2.getWife()))){
-							System.out.println("Wife Name1:" +getIndividual(familyObject1.getWife()));
-							System.out.println("wife Name2:" +getIndividual(familyObject2.getWife()));
-							System.out.println("Wife Name conflicting, error reported!");
-						}
-						else if(getIndividual(familyObject1.getHusband())
-								.equals(getIndividual(familyObject2.getHusband()))){
-							System.out.println("Husband Name1:" +getIndividual(familyObject1.getHusband()));
-							System.out.println("Husband Name2:" +getIndividual(familyObject2.getHusband()));
-							System.out.println("Husband Name conflicting, error reported!");
-						}
-						else if(familyObject1.getWeddingDate()
-								.equals(familyObject2.getWeddingDate())){
-							System.out.println("Wedding Date1:" +familyObject1.getWeddingDate());
-							System.out.println("Wedding Date2:" +familyObject2.getWeddingDate());
-							System.out.println("Wedding Date conflicting, error reported!");
-						}
+						ustor.Spr1OfD(familyObject1, familyObject2);
 					}
 				}
 				System.out.println("ID:@" + familyObject1.getId() + "@");
