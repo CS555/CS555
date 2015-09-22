@@ -15,4 +15,14 @@ public class UserStories {
 		Sprint1_Ding s = new Sprint1_Ding();
 		s.uniqueId(individualObject1,individualObject2);
 	}
+	
+	public void Spr1_Zhu(Individual individualObject1,Individual individualObject2) {
+		Sprint1_Zhu s = new Sprint1_Zhu();
+		s.uniqueNaBir(individualObject1, individualObject2);
+	}
+	
+	public void Spr1_Zhu(Individual individualObject1) {
+		Sprint1_Zhu s = new Sprint1_Zhu();
+		s.listCurrentAge(individualObject1);
+	}
 }

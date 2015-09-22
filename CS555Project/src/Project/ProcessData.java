@@ -81,7 +81,8 @@ public class ProcessData {
 					}
 					else if ("SEX".equals(tag)) {
 						ind.setSex(arguments.charAt(0));
-					} else if ("DEAT".equals(tag)) {
+					} 
+					else if ("DEAT".equals(tag)) {
 						ind.setDeceased(arguments.charAt(0));
 					}
 				}
@@ -94,6 +95,15 @@ public class ProcessData {
 							fam.setWeddingDate(wedDate);
 						}
 					}
+					else if("BIRT".equals(tag)){
+						line = bufferRead.readLine();
+						String []nextLine = (line.split("\\s+"));
+						if(nextLine[1].equals("DATE")){
+							String birDate = nextLine[2] +" "+ nextLine[3] +" "+ nextLine[4];
+							ind.setBirthDate(birDate);
+						}
+					}
+					
 				}
 			}
 
@@ -130,6 +140,7 @@ public class ProcessData {
 				}
 				System.out.println("ID: @" + individualObject1.getId() + "@");
 				System.out.println("Name: " + individualObject1.getName());
+				ustor.Spr1_Zhu(individualObject1);
 				System.out.println();
 			}
 		}
