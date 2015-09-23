@@ -22,7 +22,7 @@ public class PrintData {
 		Vector<String> s = new Vector<String>();
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
-		PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");
+		PrintWriter writer = new PrintWriter("Output.txt", "UTF-8");
 		while(s.size()>0)
 		{
 		    writer.write(s.firstElement());
