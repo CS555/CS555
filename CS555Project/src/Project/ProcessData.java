@@ -5,6 +5,7 @@ package Project;
 
 import Data.Family;
 import Data.Individual;
+
 import java.io.*;
 import java.util.*;
 
@@ -126,10 +127,12 @@ public class ProcessData {
 	}
 
 	// print ID,name,in order
-	public void print_individual() {
+	public Vector<String> print_individual() {
+		Vector<String> s = new Vector<String>();
 		if (individuals == null || individuals.isEmpty()) {
-			System.out.println("No individuals!");
+			s.add("No individuals!");
 		} else {
+			
 			for (int i = 0; i < individuals.size(); i++) {
 				Individual individualObject1 = individuals.get(i);
 				for(int j = 0; j < individuals.size(); j++){
@@ -138,17 +141,18 @@ public class ProcessData {
 						ustor.Spr1_D(individualObject1, individualObject2);
 					}
 				}
-				System.out.println("ID: @" + individualObject1.getId() + "@");
-				System.out.println("Name: " + individualObject1.getName());
-				ustor.Spr1_Zhu(individualObject1);
-				System.out.println();
+				
+				s.add("ID: @" + individualObject1.getId() + "@");
+				s.add("Name: " + individualObject1.getName());
+				s.add(ustor.Spr1_Zhu(individualObject1));
 			}
 		}
+		return s;
 	}
 
 	// print Family ID and Husband,wife in order
-	public void print_family() {
-
+	public Vector<String> print_family() {
+		Vector<String> s = new Vector<String>();
 		if (families == null || families.isEmpty()) {
 			System.out.println("No families!");
 		} else {
@@ -157,16 +161,17 @@ public class ProcessData {
 				for(int j = 0; j < families.size(); j++){
 					Family familyObject2 = families.get(j);
 					if(i != j){
-						ustor.Spr1_D(familyObject1, familyObject2);
+						String tmp = ustor.Spr1_D(familyObject1, familyObject2);
+						if(!tmp.equals(""))		s.add(tmp);
 					}
 				}
-				System.out.println("ID:@" + familyObject1.getId() + "@");
-				System.out.println("Husband: " + getIndividual(familyObject1.getHusband()));
-				System.out.println("Wife: " + getIndividual(familyObject1.getWife()));
-				System.out.println("Wedding Date:" +familyObject1.getWeddingDate());
-				System.out.println();
+				s.add("ID:@" + familyObject1.getId() + "@");
+				s.add("Husband: " + getIndividual(familyObject1.getHusband()));
+				s.add("Wife: " + getIndividual(familyObject1.getWife()));
+				s.add("Wedding Date:" +familyObject1.getWeddingDate());
 			}
 		}
+		return s;
 	}
 
 }

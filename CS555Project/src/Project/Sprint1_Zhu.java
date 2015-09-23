@@ -6,19 +6,22 @@ import Data.Individual;
 
 public class Sprint1_Zhu {
 	
-	public void uniqueNaBir(Individual individualObject1,Individual individualObject2) {
-		if(individualObject1.getName().equals(individualObject2.getName())) {
-			System.out.println("US23 error,same individual Name" + individualObject1.getName() +
-					"with ID: " + individualObject1.getId() + individualObject2.getId());
+	public String uniqueNaBir(Individual individualObject1,Individual individualObject2) {
+		String s="";
+		if(individualObject1.getName().equals(individualObject2.getName())) {	
+			s = "US23 error,same individual Name" + individualObject1.getName() +
+					"with ID: " + individualObject1.getId() + individualObject2.getId();
 		}
 		if(individualObject1.getBirthDate().equals(individualObject2.getBirthDate())) {
-			System.out.println("US23 error,same individual birth date" + individualObject1.getBirthDate() +
-					"with Name: " + individualObject1.getName() + individualObject2.getGivenName());
-		}		
+			s = "US23 error,same individual birth date" + individualObject1.getBirthDate() +
+					"with Name: " + individualObject1.getName() + individualObject2.getGivenName();
+		}
+		return s;
 	}
 	
-	public void listCurrentAge(Individual individualObject1) {
+	public String listCurrentAge(Individual individualObject1) {
 		Calendar cal = Calendar.getInstance();
+		int age=0;
 		try{
 			if(!individualObject1.getBirthDate().isEmpty())
 			{
@@ -54,19 +57,19 @@ public class Sprint1_Zhu {
 				y = cal.get(Calendar.YEAR);
 				m = cal.get(Calendar.MONTH);
 				d=cal.get(Calendar.DATE); 		
-				int age= y - yy;
+				age= y - yy;
 				if (m <= mm) { 
 			           if (m == mm) { 
 			               if (d < dd) age--; 
 			           }else{ 
 			               age--; 
 			           } 
-			    } 			
-				System.out.println("Age: " + age);
+			    } 							
 			}
 		}
 		catch(Exception e){
-			System.out.println("This individual does not have a birth date");
-		}	
+			return "This individual does not have a birth date";
+		}
+		return "Age: " + age;
 	}
 }
