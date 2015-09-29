@@ -2,3 +2,6 @@
 For CS555
 Right now we have already accomplished the project 03, we are working on sprint 1 which is project 04
 Update Date: 9/23/2015
+
+Update on Sprint 1 code files and test files
+Update Date: 9/29/2015
