@@ -64,10 +64,10 @@ public class Sprint1_DingTest {
 		fam6.setHusband("John");
 		fam6.setWeddingDate("99-09-01");
 		
-		assertEquals("US24 error, one wife(@" + fam1.getWife() + "@) two husband", obj.uniqueId_Spouse(fam1, fam2));
-		assertEquals("US24 error, one husband(@" + fam1.getHusband() + "@) two wife", obj.uniqueId_Spouse(fam1, fam3));
-		assertEquals("US24 error, same marriage date" + fam1.getWeddingDate(), obj.uniqueId_Spouse(fam1, fam4));
-		assertEquals("US22 error,same family ID @" + fam1.getId()+ "@", obj.uniqueId_Spouse(fam1, fam5));
+		assertEquals("One wife(@" + fam1.getWife() + "@) two husband", obj.uniqueId_Spouse(fam1, fam2));
+		assertEquals("One husband(@" + fam1.getHusband() + "@) two wife", obj.uniqueId_Spouse(fam1, fam3));
+		assertEquals("Same marriage date" + fam1.getWeddingDate(), obj.uniqueId_Spouse(fam1, fam4));
+		assertEquals("Same family ID @" + fam1.getId()+ "@", obj.uniqueId_Spouse(fam1, fam5));
 		assertEquals("", obj.uniqueId_Spouse(fam1, fam6));
 		
 		
