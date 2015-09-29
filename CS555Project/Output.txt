@@ -1,55 +1,55 @@
 Individuals Info:
 ID: @I1@
 Name: Jermaine /Ding/
-Age: 21
+Age: 22
 ID: @I2@
 Name: Andy /Ding/
-Age: 54
+Age: 55
 ID: @I3@
 Name: Alex /Xiong/
-Age: 51
+Age: 52
 ID: @I4@
 Name: Jim /Xiong/
-Age: 85
+Age: 86
 ID: @I5@
 Name: Haley /Wang/
-Age: 81
+Age: 82
 ID: @I6@
 Name: Eric /Ding/
-Age: 84
+Age: 85
 ID: @I7@
 Name: Nancy /Wang/
-Age: 80
+Age: 81
 ID: @I8@
 Name: Joanna /Ding/
-Age: 56
+Age: 57
 ID: @I9@
 Name: Emily /Ding/
-Age: 52
+Age: 53
 ID: @I10@
 Name: Donald /Ding/
 Age: 51
 ID: @I11@
 Name: Jason /Sun/
-Age: 57
+Age: 58
 ID: @I12@
 Name: John /Shi/
-Age: 53
+Age: 54
 ID: @I13@
 Name: Claire /Hou/
 Age: 45
 ID: @I14@
 Name: Leah /Sun/
-Age: 31
+Age: 32
 ID: @I15@
 Name: Jay /Shi/
-Age: 25
+Age: 26
 ID: @I16@
 Name: Thomas /Ding/
-Age: 18
+Age: 19
 ID: @I17@
 Name: Julia /Dennis/
-Age: 47
+Age: 48
 ID: @I18@
 Name: Zeke /Shi/
 Age: 27
@@ -71,10 +71,12 @@ ID:@F4@
 Husband: Jason /Sun/
 Wife: Joanna /Ding/
 Wedding Date:7 MAY 1980
+One husband(@I12@) two wife
 ID:@F5@
 Husband: John /Shi/
 Wife: Emily /Ding/
 Wedding Date:16 SEP 1986
+One husband(@I12@) two wife
 ID:@F7@
 Husband: John /Shi/
 Wife: Julia /Dennis/

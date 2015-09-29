@@ -29,33 +29,33 @@ public class Sprint1_Zhu {
 				int y,m,d,yy,mm,dd;
 				String []nextLine = (s.split("\\s+"));	
 				dd = Integer.parseInt(nextLine[0]);
-				if(nextLine[1] == "JAN")
+				if(nextLine[1].equals("JAN"))
 					mm = 1;
-				else if(nextLine[1] == "FEB")
+				else if(nextLine[1].equals("FEB"))
 					mm = 2;
-				else if(nextLine[1] == "MAR")
+				else if(nextLine[1].equals("MAR"))
 					mm = 3;
-				else if(nextLine[1] == "APR")
+				else if(nextLine[1].equals("APR"))
 					mm = 4;
-				else if(nextLine[1] == "MAY")
+				else if(nextLine[1].equals("MAY"))
 					mm = 5;
-				else if(nextLine[1] == "JUN")
+				else if(nextLine[1].equals("JUN"))
 					mm = 6;
-				else if(nextLine[1] == "JUL")
+				else if(nextLine[1].equals("JUL"))
 					mm = 7;
-				else if(nextLine[1] == "AUG")
+				else if(nextLine[1].equals("AUG"))
 					mm = 8;
-				else if(nextLine[1] == "SEP")
+				else if(nextLine[1].equals("SEP"))
 					mm = 9;
-				else if(nextLine[1] == "OCT")
+				else if(nextLine[1].equals("OCT"))
 					mm = 10;
-				else if(nextLine[1] == "NOV")
+				else if(nextLine[1].equals("NOV"))
 					mm = 11;
 				else
 					mm = 12;
 				yy = Integer.parseInt(nextLine[2]);
 				y = cal.get(Calendar.YEAR);
-				m = cal.get(Calendar.MONTH);
+				m = cal.get(Calendar.MONTH)+1;
 				d=cal.get(Calendar.DATE); 		
 				age= y - yy;
 				if (m <= mm) { 

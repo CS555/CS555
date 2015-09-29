@@ -1,24 +1,14 @@
 package Project;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Vector;
-
-import Data.Individual;
-import Project.ProcessData;
 
 public class PrintData {
 	public static void main(String args[]) throws IOException {
 		ProcessData ged = new ProcessData(); 
 		ged.readFile("My Family.ged"); 
-	//	System.out.println("Individuals Info:");
-	//	ged.print_individual();
-	//	System.out.println();
-	//	System.out.println("Family Info:");
-	//	ged.print_family();
-		
-		
+
 		Vector<String> s = new Vector<String>();
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
