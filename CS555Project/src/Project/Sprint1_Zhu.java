@@ -9,11 +9,11 @@ public class Sprint1_Zhu {
 	public String uniqueNaBir(Individual individualObject1,Individual individualObject2) {
 		String s="";
 		if(individualObject1.getName().equals(individualObject2.getName())) {	
-			s = "US23 error,same individual Name" + individualObject1.getName() +
+			s = "Same individual Name" + individualObject1.getName() +
 					"with ID: " + individualObject1.getId() + individualObject2.getId();
 		}
 		if(individualObject1.getBirthDate().equals(individualObject2.getBirthDate())) {
-			s = "US23 error,same individual birth date" + individualObject1.getBirthDate() +
+			s = "Same individual birth date" + individualObject1.getBirthDate() +
 					"with Name: " + individualObject1.getName() + individualObject2.getGivenName();
 		}
 		return s;

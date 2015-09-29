@@ -28,9 +28,9 @@ public class Sprint1_ZhuTest {
 		ind3.setId("03");
 		
 		assertEquals("",obj.uniqueNaBir(ind1, ind2));
-		assertEquals("US23 error,same individual Name" + ind2.getName() +
+		assertEquals("Same individual Name" + ind2.getName() +
 				"with ID: " + ind2.getId() + ind3.getId(),obj.uniqueNaBir(ind2, ind3));
-		assertEquals("US23 error,same individual birth date" + ind1.getBirthDate() +
+		assertEquals("Same individual birth date" + ind1.getBirthDate() +
 				"with Name: " + ind1.getName() + ind3.getGivenName(),obj.uniqueNaBir(ind1, ind3));	
 	}
 	
