@@ -83,9 +83,6 @@ public class ProcessData {
 					else if ("SEX".equals(tag)) {
 						ind.setSex(arguments.charAt(0));
 					} 
-					else if ("DEAT".equals(tag)) {
-						ind.setDeceased(arguments.charAt(0));
-					}
 				}
 				if(level == 1){
 					if("MARR".equals(tag)){

@@ -28,7 +28,7 @@ public class Sprint1_DingTest {
 		ind3.setId("12");
 		ind3.setName("Jason");
 		assertEquals("",obj.uniqueId(ind1, ind2));
-		assertEquals("US22 error,same individual ID @" + ind1.getId() + "with name: " 
+		assertEquals("Error Report: Same individual ID @" + ind1.getId() + "with name: " 
 		+ ind1.getName() + ind3.getName(), obj.uniqueId(ind1, ind3));
 	}
 	
@@ -64,10 +64,10 @@ public class Sprint1_DingTest {
 		fam6.setHusband("John");
 		fam6.setWeddingDate("99-09-01");
 		
-		assertEquals("One wife(@" + fam1.getWife() + "@) two husband", obj.uniqueId_Spouse(fam1, fam2));
-		assertEquals("One husband(@" + fam1.getHusband() + "@) two wife", obj.uniqueId_Spouse(fam1, fam3));
-		assertEquals("Same marriage date" + fam1.getWeddingDate(), obj.uniqueId_Spouse(fam1, fam4));
-		assertEquals("Same family ID @" + fam1.getId()+ "@", obj.uniqueId_Spouse(fam1, fam5));
+		assertEquals("Error Report: One wife(@" + fam1.getWife() + "@) two husband", obj.uniqueId_Spouse(fam1, fam2));
+		assertEquals("Error Report: One husband(@" + fam1.getHusband() + "@) two wife", obj.uniqueId_Spouse(fam1, fam3));
+		assertEquals("Error Report: Same marriage date" + fam1.getWeddingDate(), obj.uniqueId_Spouse(fam1, fam4));
+		assertEquals("Error Report: Same family ID @" + fam1.getId()+ "@", obj.uniqueId_Spouse(fam1, fam5));
 		assertEquals("", obj.uniqueId_Spouse(fam1, fam6));
 		
 		
