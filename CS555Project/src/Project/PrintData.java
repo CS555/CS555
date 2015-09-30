@@ -28,9 +28,6 @@ public class PrintData {
 		    writer.println();
 		    s.removeElementAt(0);
 		}
-		writer.close();
-		
-		
-		
+		writer.close();		
 	}
 }

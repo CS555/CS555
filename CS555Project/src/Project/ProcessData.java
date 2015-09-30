@@ -47,9 +47,9 @@ public class ProcessData {
 			Family fam = null;
 
 			while ((line = bufferRead.readLine()) != null) {
-				String[] parseLine = (line.split("\\s+"));// split the string
-				int level = Integer.valueOf(parseLine[0]); // def for the value
-				String tag = parseLine[1]; // def for tag
+				String[] parseLine = (line.split("\\s+"));              // split the string
+				int level = Integer.valueOf(parseLine[0]);              // def for the value
+				String tag = parseLine[1];                              // def for tag
 				String arguments = (parseLine.length > 2) ? getArguments(parseLine) : null;
 				if (level == 0) {
 					if ("INDI".equals(arguments)) {
@@ -57,7 +57,7 @@ public class ProcessData {
 						if (ind != null) {
 							ind.setId(getId(tag));
 							individuals.add(ind);
-							isObject = true; // it's an individual or a family
+							isObject = true;                            // it's an individual or a family
 						}
 					} else if ("FAM".equals(arguments)) {
 						fam = new Family();
@@ -104,7 +104,6 @@ public class ProcessData {
 					
 				}
 			}
-
 		} catch (FileNotFoundException ex) {
 			System.out.println("File is not found!");
 		}
@@ -170,5 +169,4 @@ public class ProcessData {
 		}
 		return s;
 	}
-
 }

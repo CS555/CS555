@@ -12,7 +12,6 @@ public class Sprint1_ZhuTest {
 	Individual ind1 = new Individual();
 	Individual ind2 = new Individual();
 	Individual ind3 = new Individual();
-	Individual ind4 = new Individual();
 	
 	
 	@Test

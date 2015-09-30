@@ -20,11 +20,11 @@ public class Sprint1_Zhu {
 	}
 	
 	public String listCurrentAge(Individual individualObject1) {
-		Calendar cal = Calendar.getInstance();
-		int age=0;
+		int age  =0;
 		try{
 			if(!individualObject1.getBirthDate().isEmpty())
 			{
+				Calendar cal = Calendar.getInstance();
 				String s = individualObject1.getBirthDate();
 				int y,m,d,yy,mm,dd;
 				String []nextLine = (s.split("\\s+"));	
