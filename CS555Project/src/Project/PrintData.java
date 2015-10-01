@@ -28,6 +28,7 @@ public class PrintData {
 		    writer.println();
 		    s.removeElementAt(0);
 		}
+		System.out.println("Result is printed to Output.txt file.");
 		writer.close();		
 	}
 }

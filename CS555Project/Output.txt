@@ -71,12 +71,12 @@ ID:@F4@
 Husband: Jason /Sun/
 Wife: Joanna /Ding/
 Wedding Date:7 MAY 1980
-One husband(@I12@) two wife
+Error Report: One husband(@I12@) two wife
 ID:@F5@
 Husband: John /Shi/
 Wife: Emily /Ding/
 Wedding Date:16 SEP 1986
-One husband(@I12@) two wife
+Error Report: One husband(@I12@) two wife
 ID:@F7@
 Husband: John /Shi/
 Wife: Julia /Dennis/
