@@ -13,7 +13,6 @@ public class Sprint1_ZhuTest {
 	Individual ind2 = new Individual();
 	Individual ind3 = new Individual();
 	
-	
 	@Test
 	public void testUniqueNaBir() {
 		ind1.setBirthDate("16 SEP 1960");

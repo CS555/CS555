@@ -6,9 +6,12 @@ import java.util.Vector;
 
 public class PrintData {
 	public static void main(String args[]) throws IOException {
+		
+		// read GEDCOM file in local
 		ProcessData ged = new ProcessData(); 
 		ged.readFile("My Family.ged"); 
-
+		
+		// output result test for Sprint1
 		Vector<String> s = new Vector<String>();
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
@@ -28,6 +31,13 @@ public class PrintData {
 		    writer.println();
 		    s.removeElementAt(0);
 		}
+		
+		// output result test for Sprint2
+		
+		// output result test for Sprint3
+		
+		// output result test for Sprint4
+			
 		System.out.println("Result is printed to Output.txt file.");
 		writer.close();		
 	}

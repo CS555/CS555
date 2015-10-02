@@ -68,9 +68,7 @@ public class Sprint1_DingTest {
 		assertEquals("Error Report: One husband(@" + fam1.getHusband() + "@) two wife", obj.uniqueId_Spouse(fam1, fam3));
 		assertEquals("Error Report: Same marriage date" + fam1.getWeddingDate(), obj.uniqueId_Spouse(fam1, fam4));
 		assertEquals("Error Report: Same family ID @" + fam1.getId()+ "@", obj.uniqueId_Spouse(fam1, fam5));
-		assertEquals("", obj.uniqueId_Spouse(fam1, fam6));
-		
-		
+		assertEquals("", obj.uniqueId_Spouse(fam1, fam6));	
 	}
 
 }
