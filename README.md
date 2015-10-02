@@ -8,3 +8,6 @@ Update Date: 9/29/2015
 
 Couple of bug fixed on code and files and improve some of declaration of variables
 Update Date: 10/1/2015
+
+Methods improvements and minor bug fixed
+Update Date: 10/2/2015
