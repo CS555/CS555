@@ -122,6 +122,7 @@ public class ProcessData {
 		return "No Individual Error!";
 	}
 
+	// print individual info
 	public Vector<String> print_individual() {
 		Vector<String> s = new Vector<String>();
 		if (individuals == null || individuals.isEmpty()) {
@@ -145,6 +146,7 @@ public class ProcessData {
 		return s;
 	}
 
+	// print family information
 	public Vector<String> print_family() {
 		Vector<String> s = new Vector<String>();
 		if (families == null || families.isEmpty()) {

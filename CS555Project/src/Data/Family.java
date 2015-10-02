@@ -12,13 +12,12 @@ public class Family {
 	private String weddingDate;
 	private String divorceDate;
 
+	//get id
 	public String getId() {
-
 		return id;
-
 	}
 
-	// store the identifier
+	// store id
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -70,6 +69,4 @@ public class Family {
 	public void setDivorceDate(String ddate){
 		this.divorceDate = ddate;
 	}
-	
-
 }

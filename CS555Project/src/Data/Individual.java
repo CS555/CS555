@@ -15,7 +15,7 @@ public class Individual {
 	private String deathDate;
 	private char deceased;
 
-	// get id method
+	// get id 
 	public String getId() {
 		return id;
 	}
@@ -45,38 +45,47 @@ public class Individual {
 		this.name = name;
 	}
 
+	// get family name
 	public String getSurName() {
 		return surName;
 	}
 
+	// set family name
 	public void setSurName(String surName) {
 		this.surName = surName;
 	}
 
+	// get first name
 	public String getGivenName() {
 		return givenName;
 	}
 
+	// set first name
 	public void setGivenName(String givenName) {
 		this.givenName = givenName;
 	}
 
+	// get birth date
 	public String getBirthDate() {
 		return birthDate;
 	}
 
+	// set birth date
 	public void setBirthDate(String birthDate) {
 		this.birthDate = birthDate;
 	}
 
+	// get death date
 	public String getDeathDate() {
 		return deathDate;
 	}
 
+	// set death date
 	public void setDeathDate(String deathDate) {
 		this.deathDate = deathDate;
 	}
 
+	// judge whether a people has died or not
 	public char getDeceased() {
 		return deceased;
 	}
