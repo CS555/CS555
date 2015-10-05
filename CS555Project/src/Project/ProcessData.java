@@ -93,6 +93,14 @@ public class ProcessData {
 							fam.setWeddingDate(wedDate);
 						}
 					}
+					else if("DIV".equals(tag)){
+						line = bufferRead.readLine();
+						String []nextLine = (line.split("\\s+"));
+						if(nextLine[1].equals("DATE")){
+							String divDate = nextLine[2] +" "+ nextLine[3] +" "+ nextLine[4];
+							fam.setDivorceDate(divDate);
+						}
+					}
 					else if("BIRT".equals(tag)){
 						line = bufferRead.readLine();
 						String []nextLine = (line.split("\\s+"));
@@ -101,7 +109,14 @@ public class ProcessData {
 							ind.setBirthDate(birDate);
 						}
 					}
-					
+					else if("DEAT".equals(tag)){
+						line = bufferRead.readLine();
+						String []nextLine = (line.split("\\s+"));
+						if(nextLine[1].equals("DATE")){
+							String deathDate = nextLine[2] +" "+ nextLine[3] +" "+ nextLine[4];
+							ind.setDeathDate(deathDate);
+						}
+					}
 				}
 			}
 		} catch (FileNotFoundException ex) {
@@ -131,14 +146,26 @@ public class ProcessData {
 			
 			for (int i = 0; i < individuals.size(); i++) {
 				Individual indiO1 = individuals.get(i);
+				String res1 = ustor.Spr2_D_US3(indiO1);
+				String res2 = ustor.Spr2_D_B(indiO1);
+				String res3 = ustor.Spr2_D_D(indiO1);
+				if(!res1.equals("")){
+					s.add(res1);
+				}
+				if(!res2.equals("")){
+					s.add(res2);
+				}
+				if(!res3.equals("")){
+					s.add(res3);
+				}
 				for(int j = 0; j < individuals.size(); j++){
 					Individual indiO2 = individuals.get(j);
 					if (i != j){
 						
 						// check for sprint1
-						ustor.Spr1_D(indiO1, indiO2);
+						String tmp = ustor.Spr1_D(indiO1, indiO2);
+						if(!tmp.equals("")) s.add(tmp);
 						
-						// check for sprint2
 						
 						// check for sprint3
 						
@@ -162,6 +189,14 @@ public class ProcessData {
 		} else {
 			for (int i = 0; i < families.size(); i++) {
 				Family famO1 = families.get(i);
+				String res1 = ustor.Spr2_D_M(famO1);
+				String res2 = ustor.Spr2_D_D(famO1);
+				if(!res1.equals("")){
+					s.add(res1);
+				}
+				if(!res2.equals("")){
+					s.add(res2);
+				}
 				for(int j = 0; j < families.size(); j++){
 					Family famO2 = families.get(j);
 					if(i != j){

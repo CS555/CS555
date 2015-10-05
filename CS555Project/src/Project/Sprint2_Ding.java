@@ -98,7 +98,7 @@ public class Sprint2_Ding {
 			currentDay = cal.get(Calendar.DATE);
 			currentMonth = cal.get(Calendar.MONTH);
 			currentYear = cal.get(Calendar.YEAR);
-			if(!indiO.getBirthDate().isEmpty()){
+			if(!indiO.getDeathDate().isEmpty()){
 				String death = indiO.getDeathDate();
 				int deathYear, deathMon, deathDay;
 				String []deathNextLine = death.split("\\s+") ;
