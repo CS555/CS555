@@ -5,23 +5,30 @@ import Data.Individual;
 
 public class UserStories {
 	
-	public String Spr1_D(Family familyObject1, Family familyObject2) {
+	public String Spr1_D(Family fam1, Family fam2) {
 		Sprint1_Ding s = new Sprint1_Ding();
-		return s.uniqueId_Spouse(familyObject1, familyObject2);
+		return s.uniqueId_Spouse(fam1, fam2);
 	}
 	
-	public String Spr1_D(Individual individualObject1,Individual individualObject2) {
+	public String Spr1_D(Individual ind1,Individual ind2) {
 		Sprint1_Ding s = new Sprint1_Ding();
-		return s.uniqueId(individualObject1,individualObject2);
+		return s.uniqueId(ind1,ind2);
 	}
 	
-	public String Spr1_Zhu(Individual individualObject1,Individual individualObject2) {
+	public String Spr1_Zhu(Individual ind1,Individual ind2) {
 		Sprint1_Zhu s = new Sprint1_Zhu();
-		return s.uniqueNaBir(individualObject1, individualObject2);
+		return s.uniqueNaBir(ind1, ind2);
 	}
 	
-	public String Spr1_Zhu(Individual individualObject1) {
+	public String Spr1_Zhu(Individual ind1) {
 		Sprint1_Zhu s = new Sprint1_Zhu();
-		return s.listCurrentAge(individualObject1);
+		return s.listCurrentAge(ind1);
 	}
+	
+	/*
+	public String Spr2_Zhu(Family fam1, Family fam2) {
+		Sprint2_Zhu s = new Sprint2_Zhu();
+		return s.MarrBeforeDivo(fam1, fam2);
+	}
+	*/
 }
