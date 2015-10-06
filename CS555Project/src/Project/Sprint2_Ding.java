@@ -45,7 +45,7 @@ public class Sprint2_Ding {
 		return mon;
 	}
 	
-	public String checkBirthDatesBeforeCurrentForIndi(Individual indiO){
+	public String checkBirthDateBeforeCurrentForIndi(Individual indiO){
 		try{
 			String res = "";
 			Calendar cal = Calendar.getInstance();

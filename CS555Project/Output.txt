@@ -1,25 +1,25 @@
 Individuals Info:
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I1@
 Name: Jermaine /Ding/
 Age: 22
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I2@
 Name: Andy /Ding/
 Age: 55
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I3@
 Name: Alex /Xiong/
 Age: 52
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I4@
 Name: Jim /Xiong/
 Age: 86
@@ -29,81 +29,81 @@ Data Valid
 ID: @I5@
 Name: Haley /Wang/
 Age: 82
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I6@
 Name: Eric /Ding/
 Age: 85
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I7@
 Name: Nancy /Wang/
 Age: 81
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I8@
 Name: Joanna /Ding/
 Age: 57
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I9@
 Name: Emily /Ding/
 Age: 53
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I10@
 Name: Donald /Ding/
 Age: 52
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I11@
 Name: Jason /Sun/
 Age: 58
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I12@
 Name: John /Shi/
 Age: 54
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I13@
 Name: Claire /Hou/
 Age: 45
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I14@
 Name: Leah /Sun/
 Age: 32
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I15@
 Name: Jay /Shi/
 Age: 26
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I16@
 Name: Thomas /Ding/
 Age: 19
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I17@
 Name: Julia /Dennis/
 Age: 48
-this individual does not have a death date(still alive)
 Data Valid
 This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I18@
 Name: Zeke /Shi/
 Age: 27

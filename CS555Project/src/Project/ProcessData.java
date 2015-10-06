@@ -146,9 +146,9 @@ public class ProcessData {
 			
 			for (int i = 0; i < individuals.size(); i++) {
 				Individual indiO1 = individuals.get(i);
-				String res1 = ustor.Spr2_D_US3(indiO1);
-				String res2 = ustor.Spr2_D_B(indiO1);
-				String res3 = ustor.Spr2_D_D(indiO1);
+				String res1 = ustor.Spr2_D_B(indiO1);
+				String res2 = ustor.Spr2_D_D(indiO1);
+				String res3 = ustor.Spr2_D_US3(indiO1);
 				if(!res1.equals("")){
 					s.add(res1);
 				}

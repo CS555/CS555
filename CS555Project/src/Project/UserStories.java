@@ -17,7 +17,7 @@ public class UserStories {
 	
 	public String Spr2_D_B(Individual individualObject){
 		Sprint2_Ding s = new Sprint2_Ding();
-		return s.checkBirthDatesBeforeCurrentForIndi(individualObject);
+		return s.checkBirthDateBeforeCurrentForIndi(individualObject);
 	}
 	
 	public String Spr2_D_D(Individual individualObject){
@@ -40,7 +40,6 @@ public class UserStories {
 		return s.checkBirthBeforeDeath(individualObject);
 	}
 	
-
 	public String Spr1_Zhu(Individual ind1,Individual ind2) {
 
 		Sprint1_Zhu s = new Sprint1_Zhu();
