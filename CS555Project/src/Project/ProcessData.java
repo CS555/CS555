@@ -146,6 +146,7 @@ public class ProcessData {
 			
 			for (int i = 0; i < individuals.size(); i++) {
 				Individual indiO1 = individuals.get(i);
+				//sprint 2
 				String res1 = ustor.Spr2_D_B(indiO1);
 				String res2 = ustor.Spr2_D_D(indiO1);
 				String res3 = ustor.Spr2_D_US3(indiO1);
@@ -162,14 +163,13 @@ public class ProcessData {
 					Individual indiO2 = individuals.get(j);
 					if (i != j){
 						
-						// check for sprint1
+						//sprint 1
 						String tmp = ustor.Spr1_D(indiO1, indiO2);
 						if(!tmp.equals("")) s.add(tmp);
 						
+						// sprint 3
 						
-						// check for sprint3
-						
-						// check for sprint4
+						// sprint 4
 					}
 				}
 				
@@ -189,6 +189,7 @@ public class ProcessData {
 		} else {
 			for (int i = 0; i < families.size(); i++) {
 				Family famO1 = families.get(i);
+				//sprint 2
 				String res1 = ustor.Spr2_D_M(famO1);
 				String res2 = ustor.Spr2_D_D(famO1);
 				if(!res1.equals("")){
@@ -201,15 +202,13 @@ public class ProcessData {
 					Family famO2 = families.get(j);
 					if(i != j){
 						
-						// check for sprint1
+						// sprint 1
 						String tmp = ustor.Spr1_D(famO1, famO2);
 						if(!tmp.equals(""))		s.add(tmp);
+												
+						// sprint 3
 						
-						// check for sprint2
-						
-						// check for sprint3
-						
-						// check for sprint4
+						// sprint 4
 					}
 				}
 				s.add("ID:@" + famO1.getId() + "@");
