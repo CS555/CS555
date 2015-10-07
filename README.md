@@ -12,5 +12,8 @@ Update Date: 10/1/2015
 Methods improvements and minor bug fixed
 Update Date: 10/2/2015
 
-Sprint 2 has started today
+Wrapping up Sprint 1 and all methods works efficiently
 Update Date: 10/6/2015
+
+Sprint 2 has started today
+Update Date: 10/7/2015
