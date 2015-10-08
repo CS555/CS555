@@ -274,7 +274,7 @@ public class Sprint2_Ding {
 			return res;
 		}
 		catch(Exception e){
-			return "this individual does not have a death date(still alive)";
+			return "this individual does not have a death date(individual is still alive)";
 		}
 	}
 }
