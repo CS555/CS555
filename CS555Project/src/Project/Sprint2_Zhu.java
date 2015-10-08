@@ -16,7 +16,7 @@ public class Sprint2_Zhu {
 				int divyear,divmon,divday;
 				String []marline = (marD.split("\\s+"));	
 				String []divLine = (divD.split("\\s+"));	
-				maryear = Integer.parseInt(s)
+				maryear = Integer.parseInt(s);
 				
 			}
 			
