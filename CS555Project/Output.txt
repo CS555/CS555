@@ -1,86 +1,154 @@
 Individuals Info:
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I1@
 Name: Jermaine /Ding/
 Age: 22
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I2@
 Name: Andy /Ding/
 Age: 55
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I3@
 Name: Alex /Xiong/
 Age: 52
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I4@
 Name: Jim /Xiong/
 Age: 86
+Data Valid
+Data Valid
+Data Valid
 ID: @I5@
 Name: Haley /Wang/
 Age: 82
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I6@
 Name: Eric /Ding/
 Age: 85
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I7@
 Name: Nancy /Wang/
 Age: 81
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I8@
 Name: Joanna /Ding/
 Age: 57
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I9@
 Name: Emily /Ding/
 Age: 53
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I10@
 Name: Donald /Ding/
 Age: 52
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I11@
 Name: Jason /Sun/
 Age: 58
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I12@
 Name: John /Shi/
 Age: 54
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I13@
 Name: Claire /Hou/
 Age: 45
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I14@
 Name: Leah /Sun/
 Age: 32
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I15@
 Name: Jay /Shi/
 Age: 26
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I16@
 Name: Thomas /Ding/
 Age: 19
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I17@
 Name: Julia /Dennis/
 Age: 48
+Data Valid
+This individual does not have death date information
+this individual does not have a death date(still alive)
 ID: @I18@
 Name: Zeke /Shi/
 Age: 27
 
 Family Info
+Data Valid
+This family does not have divorce date information
 ID:@F1@
 Husband: Andy /Ding/
 Wife: Alex /Xiong/
 Wedding Date:8 SEP 1989
+Data Valid
+This family does not have divorce date information
 ID:@F2@
 Husband: Eric /Ding/
 Wife: Nancy /Wang/
 Wedding Date:9 JUL 1955
+Data Valid
+This family does not have divorce date information
 ID:@F3@
 Husband: Jim /Xiong/
 Wife: Haley /Wang/
 Wedding Date:9 JUN 1985
+Data Valid
+This family does not have divorce date information
 ID:@F4@
 Husband: Jason /Sun/
 Wife: Joanna /Ding/
 Wedding Date:7 MAY 1980
+Data Valid
+This family does not have divorce date information
 Error Report: One husband(@I12@) two wife
 ID:@F5@
 Husband: John /Shi/
 Wife: Emily /Ding/
 Wedding Date:16 SEP 1986
+Data Valid
+Data Valid
 Error Report: One husband(@I12@) two wife
 ID:@F7@
 Husband: John /Shi/
 Wife: Julia /Dennis/
 Wedding Date:8 JUN 1983
+Data Valid
+This family does not have divorce date information
 ID:@F6@
 Husband: Donald /Ding/
 Wife: Claire /Hou/

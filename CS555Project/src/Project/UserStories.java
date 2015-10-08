@@ -51,10 +51,10 @@ public class UserStories {
 		return s.listCurrentAge(ind1);
 	}
 	
-	/*
-	public String Spr2_Zhu(Family fam1, Family fam2) {
+	
+	public String Spr2_Zhu(Family fam) {
 		Sprint2_Zhu s = new Sprint2_Zhu();
-		return s.MarrBeforeDivo(fam1, fam2);
+		return s.MarrBeforeDivo(fam);
 	}
-	*/
+	
 }

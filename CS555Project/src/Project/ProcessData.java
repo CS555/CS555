@@ -189,7 +189,8 @@ public class ProcessData {
 		} else {
 			for (int i = 0; i < families.size(); i++) {
 				Family famO1 = families.get(i);
-				//sprint 2
+				
+				//sprint 2  by Zhejie Ding
 				String res1 = ustor.Spr2_D_M(famO1);
 				String res2 = ustor.Spr2_D_D(famO1);
 				if(!res1.equals("")){
@@ -198,6 +199,11 @@ public class ProcessData {
 				if(!res2.equals("")){
 					s.add(res2);
 				}
+				
+				//sprint 2  by Zhaohui Zhu
+				String res3 = ustor.Spr2_Zhu(famO1);
+
+				
 				for(int j = 0; j < families.size(); j++){
 					Family famO2 = families.get(j);
 					if(i != j){
