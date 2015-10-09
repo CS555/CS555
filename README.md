@@ -17,3 +17,6 @@ Update Date: 10/6/2015
 
 Sprint 2 has started today
 Update Date: 10/7/2015
+
+Sprint 2 Ding and Zhu are updated today.
+Update Date: 10/9/2015
