@@ -62,15 +62,15 @@ public class Sprint2_Ding {
 				birthMon = setMon(birthNextLine[1]);
 				birthYear = Integer.parseInt(birthNextLine[2]);			
 				if(birthYear < currentYear){
-					res = "Data Valid";
+					res = "";
 				}
 				else if(birthYear == currentYear){
 					if(birthMon < currentMonth){
-						res = "Data Valid";
+						res = "";
 					}
 					else if(birthMon == currentMonth){
 						if(birthDay <= currentDay){
-							res = "Data Valid";
+							res = "";
 						}
 						else{
 							res = "Data Invalid: Birth Date is behind Current Date";
@@ -132,7 +132,7 @@ public class Sprint2_Ding {
 			return res;
 		}
 		catch(Exception e){
-			return "This individual does not have death date information";
+			return "";
 		}
 	}
 	
@@ -152,15 +152,15 @@ public class Sprint2_Ding {
 				weddMon = setMon(weddNextLine[1]);
 				weddYear = Integer.parseInt(weddNextLine[2]);			
 				if(weddYear < currentYear){
-					res = "Data Valid";
+					res = "";
 				}
 				else if(weddYear == currentYear){
 					if(weddMon < currentMonth){
-						res = "Data Valid";
+						res = "";
 					}
 					else if(weddMon == currentMonth){
 						if(weddDay <= currentDay){
-							res = "Data Valid";
+							res = "";
 						}
 						else{
 							res = "Data Invalid: Marriage Date is behind Current Date";
@@ -197,15 +197,15 @@ public class Sprint2_Ding {
 				divMon = setMon(divNextLine[1]);
 				divYear = Integer.parseInt(divNextLine[2]);			
 				if(divYear < currentYear){
-					res = "Data Valid";
+					res = "";
 				}
 				else if(divYear == currentYear){
 					if(divMon < currentMonth){
-						res = "Data Valid";
+						res = "";
 					}
 					else if(divMon == currentMonth){
 						if(divDay <= currentDay){
-							res = "Data Valid";
+							res = "";
 						}
 						else{
 							res = "Data Invalid: Divorce Date is behind Current Date";
@@ -222,7 +222,7 @@ public class Sprint2_Ding {
 			return res;
 		}
 		catch(Exception e){
-			return "This family does not have divorce date information";
+			return "";
 		}
 	}
 	
@@ -244,15 +244,15 @@ public class Sprint2_Ding {
 				birthYear = Integer.parseInt(birnextLine[2]);
 				deathYear = Integer.parseInt(deanextLine[2]);
 				if(birthYear < deathYear){
-					res = "Data Valid";
+					res = "";
 				}
 				else if(birthYear == deathYear){
 					if(birthMon < deathMon){
-						res = "Data Valid";
+						res = "";
 					}
 					else if(birthMon == deathMon){
 						if(birthDay <= deathDay){
-							res = "Data Valid";
+							res = "";
 						}
 						else{
 							res = "Data Invalid: Birth Date is behind Death Date";
@@ -270,12 +270,12 @@ public class Sprint2_Ding {
 				res = "Data Invalid: Individual has a death date, no birth date";
 			}
 			else{
-				res = "Data Valid";
+				res = "";
 			}
 			return res;
 		}
 		catch(Exception e){
-			return "this individual does not have a death date(individual is still alive)";
+			return "";
 		}
 	}
 }

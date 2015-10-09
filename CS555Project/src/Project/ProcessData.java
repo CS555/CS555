@@ -152,15 +152,12 @@ public class ProcessData {
 				String res2 = ustor.Spr2_D_D(indiO1);
 				String res3 = ustor.Spr2_D_US3(indiO1);
 				if(!res1.equals("")){
-					s.add("Check Birth Date Before Current:");
 					s.add(res1);
 				}
 				if(!res2.equals("")){
-					s.add("Check Death Date Before Current:");
 					s.add(res2);
 				}
 				if(!res3.equals("")){
-					s.add("Check Birth Date Before Death:");
 					s.add(res3);
 				}
 				for(int j = 0; j < individuals.size(); j++){
@@ -198,11 +195,9 @@ public class ProcessData {
 				String res1 = ustor.Spr2_D_M(famO1);
 				String res2 = ustor.Spr2_D_D(famO1);
 				if(!res1.equals("")){
-					s.add("Check Marriage Date Before Current:");
 					s.add(res1);
 				}
 				if(!res2.equals("")){
-					s.add("Check Divorce Date Before Current:");
 					s.add(res2);
 				}
 				
