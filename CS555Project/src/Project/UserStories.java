@@ -51,7 +51,7 @@ public class UserStories {
 		return s.listCurrentAge(ind1);
 	}
 	
-	
+	//test US04 in Sprint2
 	public String Spr2_Zhu(Family fam) {
 		Sprint2_Zhu s = new Sprint2_Zhu();
 		return s.MarrBeforeDivo(fam);

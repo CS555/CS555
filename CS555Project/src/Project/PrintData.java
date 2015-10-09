@@ -23,6 +23,8 @@ public class PrintData {
 		    s.removeElementAt(0);
 		}
 		s.add("");
+		s.add("");
+		s.add("");
 		s.add("Family Info");
 		s.addAll(ged.print_family());
 		while(s.size()>0)

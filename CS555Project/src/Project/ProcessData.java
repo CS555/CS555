@@ -146,8 +146,14 @@ public class ProcessData {
 			
 			for (int i = 0; i < individuals.size(); i++) {
 				Individual indiO1 = individuals.get(i);
+						
+				s.add("");
+				s.add("ID: @" + indiO1.getId() + "@");
+				s.add("Name: " + indiO1.getName());
+				s.add(ustor.Spr1_Zhu(indiO1));
+					
+				/*************test for sprint***********************/
 				//sprint 2
-				
 				String res1 = ustor.Spr2_D_B(indiO1);
 				String res2 = ustor.Spr2_D_D(indiO1);
 				String res3 = ustor.Spr2_D_US3(indiO1);
@@ -174,9 +180,6 @@ public class ProcessData {
 					}
 				}
 				
-				s.add("ID: @" + indiO1.getId() + "@");
-				s.add("Name: " + indiO1.getName());
-				s.add(ustor.Spr1_Zhu(indiO1));
 			}
 		}
 		return s;
@@ -191,6 +194,18 @@ public class ProcessData {
 			for (int i = 0; i < families.size(); i++) {
 				Family famO1 = families.get(i);
 				
+				s.add("");
+				s.add("ID:@" + famO1.getId() + "@");
+				s.add("Husband: " + getIndividual(famO1.getHusband()));
+				s.add("Wife: " + getIndividual(famO1.getWife()));
+				s.add("Wedding Date:" +famO1.getWeddingDate());
+				try{
+					if(!famO1.getDivorceDate().isEmpty())
+					s.add("Divorce Date: " + famO1.getDivorceDate());
+				}
+				catch(Exception e){}
+				
+				/*************test for sprint***********************/
 				//sprint 2 
 				String res1 = ustor.Spr2_D_M(famO1);
 				String res2 = ustor.Spr2_D_D(famO1);
@@ -203,8 +218,10 @@ public class ProcessData {
 				
 				//sprint 2  by Zhaohui Zhu
 				String res3 = ustor.Spr2_Zhu(famO1);
-
-				
+				if(!res3.equals("")) {
+					s.add(res3);
+				}
+	
 				for(int j = 0; j < families.size(); j++){
 					Family famO2 = families.get(j);
 					if(i != j){
@@ -218,10 +235,7 @@ public class ProcessData {
 						// sprint 4
 					}
 				}
-				s.add("ID:@" + famO1.getId() + "@");
-				s.add("Husband: " + getIndividual(famO1.getHusband()));
-				s.add("Wife: " + getIndividual(famO1.getWife()));
-				s.add("Wedding Date:" +famO1.getWeddingDate());
+				
 			}
 		}
 		return s;
