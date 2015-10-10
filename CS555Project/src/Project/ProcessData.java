@@ -47,9 +47,9 @@ public class ProcessData {
 			Family fam = null;
 
 			while ((line = bufferRead.readLine()) != null) {
-				String[] parseLine = (line.split("\\s+"));              // split the string
-				int level = Integer.valueOf(parseLine[0]);              // def for the value
-				String tag = parseLine[1];                              // def for tag
+				String[] parseLine = (line.split("\\s+"));              
+				int level = Integer.valueOf(parseLine[0]);              
+				String tag = parseLine[1];                             
 				String arguments = (parseLine.length > 2) ? getArguments(parseLine) : null;
 				if (level == 0) {
 					if ("INDI".equals(arguments)) {
@@ -57,7 +57,7 @@ public class ProcessData {
 						if (ind != null) {
 							ind.setId(getId(tag));
 							individuals.add(ind);
-							isObject = true;                            // it's an individual or a family
+							isObject = true;                            
 						}
 					} else if ("FAM".equals(arguments)) {
 						fam = new Family();
@@ -153,7 +153,8 @@ public class ProcessData {
 				s.add(ustor.Spr1_Zhu(indiO1));
 					
 				/*************test for sprint***********************/
-				//sprint 2
+				// sprint 2 output
+				// only give error report if data is invalid
 				String res1 = ustor.Spr2_D_B(indiO1);
 				String res2 = ustor.Spr2_D_D(indiO1);
 				String res3 = ustor.Spr2_D_US3(indiO1);
@@ -170,7 +171,7 @@ public class ProcessData {
 					Individual indiO2 = individuals.get(j);
 					if (i != j){
 						
-						//sprint 1
+						// sprint 1 output
 						String tmp = ustor.Spr1_D(indiO1, indiO2);
 						if(!tmp.equals("")) s.add(tmp);
 						
@@ -206,7 +207,8 @@ public class ProcessData {
 				catch(Exception e){}
 				
 				/*************test for sprint***********************/
-				//sprint 2 
+				// sprint 2 output
+				// only give error report if data is invalid
 				String res1 = ustor.Spr2_D_M(famO1);
 				String res2 = ustor.Spr2_D_D(famO1);
 				if(!res1.equals("")){
@@ -216,7 +218,7 @@ public class ProcessData {
 					s.add(res2);
 				}
 				
-				//sprint 2  by Zhaohui Zhu
+				
 				String res3 = ustor.Spr2_Zhu(famO1);
 				if(!res3.equals("")) {
 					s.add(res3);
@@ -226,7 +228,7 @@ public class ProcessData {
 					Family famO2 = families.get(j);
 					if(i != j){
 						
-						// sprint 1
+						// sprint 1 output
 						String tmp = ustor.Spr1_D(famO1, famO2);
 						if(!tmp.equals(""))		s.add(tmp);
 												

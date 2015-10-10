@@ -5,7 +5,7 @@ import Data.Individual;
 import java.util.Calendar;
 
 public class Sprint2_Ding {
-	//sprint 2 by Zejie Ding
+	//sprint 2
 	public int setMon(String str){
 		int mon=0;
 		if(str.equals("JAN")){

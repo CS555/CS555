@@ -11,7 +11,7 @@ public class PrintData {
 		ProcessData ged = new ProcessData(); 
 		ged.readFile("My Family.ged"); 
 		
-		// output result test for Sprint1
+		// output result test for sprint 1 and sprint 2
 		Vector<String> s = new Vector<String>();
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
@@ -32,14 +32,7 @@ public class PrintData {
 		    writer.write(s.firstElement());
 		    writer.println();
 		    s.removeElementAt(0);
-		}
-		
-		// output result test for Sprint2
-		
-		// output result test for Sprint3
-		
-		// output result test for Sprint4
-			
+		}			
 		System.out.println("Result is printed to Output.txt file.");
 		writer.close();		
 	}
