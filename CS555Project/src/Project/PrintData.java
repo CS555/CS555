@@ -11,7 +11,7 @@ public class PrintData {
 		ProcessData ged = new ProcessData(); 
 		ged.readFile("My Family.ged"); 
 		
-		// output result test for sprint 1 and sprint 2
+		// output result for sprint 1 and sprint 2 to output.txt file
 		Vector<String> s = new Vector<String>();
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
