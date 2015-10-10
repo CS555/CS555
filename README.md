@@ -20,3 +20,6 @@ Update Date: 10/7/2015
 
 Sprint 2 Ding and Zhu are updated today.
 Update Date: 10/9/2015
+
+Sprint 2 Ding updated today
+Update Date: 10/10/2015
