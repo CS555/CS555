@@ -7,7 +7,6 @@ public class Sprint2_Zhu {
 	public String MarrBeforeDivo(Family fam)
 	{
 		String s="";
-		/////
 		try {
 			if(!fam.getWeddingDate().isEmpty()) {
 				String marD = fam.getWeddingDate();
@@ -37,7 +36,7 @@ public class Sprint2_Zhu {
 			}
 			return s;	
 		}
-		catch(Exception e){
+		catch(Exception e){   //avoid no marriage and divorce data.
 			return s;
 		}
 	}
