@@ -7,7 +7,7 @@ public class Sprint2_Zhu {
 	public String MarrBeforeDivo(Family fam)
 	{
 		String s="";
-		
+		/////
 		try {
 			if(!fam.getWeddingDate().isEmpty()) {
 				String marD = fam.getWeddingDate();
