@@ -81,39 +81,39 @@ Family Info
 ID:@F1@
 Husband: Andy /Ding/
 Wife: Alex /Xiong/
-Wedding Date:8 SEP 1989
+Wedding Date :8 SEP 1989
 
 ID:@F2@
 Husband: Eric /Ding/
 Wife: Nancy /Wang/
-Wedding Date:9 JUL 1955
+Wedding Date :9 JUL 1955
 
 ID:@F3@
 Husband: Jim /Xiong/
 Wife: Haley /Wang/
-Wedding Date:9 JUN 1985
+Wedding Date :9 JUN 1985
 
 ID:@F4@
 Husband: Jason /Sun/
 Wife: Joanna /Ding/
-Wedding Date:7 MAY 1980
+Wedding Date :7 MAY 1980
 
 ID:@F5@
 Husband: John /Shi/
 Wife: Emily /Ding/
-Wedding Date:16 SEP 1986
+Wedding Date :16 SEP 1986
 Error Report: One husband(@I12@) two wife
 
 ID:@F7@
 Husband: John /Shi/
 Wife: Julia /Dennis/
-Wedding Date:8 JUN 1983
-Divorce Date: 9 JUN 1981
+Wedding Date :8 JUN 1983
+Divorce Date: 8 MAY 1983
 Error! marriage should occur before divorce
 Error Report: One husband(@I12@) two wife
 
 ID:@F6@
 Husband: Donald /Ding/
 Wife: Claire /Hou/
-Wedding Date:12 JUN 2016
+Wedding Date :12 JUN 2016
 Data Invalid: Marriage Date is behind Current Date

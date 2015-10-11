@@ -13,6 +13,8 @@ public class PrintData {
 		
 		// output result for sprint 1 and sprint 2 to output.txt file
 		Vector<String> s = new Vector<String>();
+		
+		// get the individuals data and test
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
 		PrintWriter writer = new PrintWriter("Output.txt", "UTF-8");
@@ -25,6 +27,8 @@ public class PrintData {
 		s.add("");
 		s.add("");
 		s.add("");
+		
+		// get the family data and test
 		s.add("Family Info");
 		s.addAll(ged.print_family());
 		while(s.size()>0)

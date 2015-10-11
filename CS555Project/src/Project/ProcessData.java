@@ -199,7 +199,7 @@ public class ProcessData {
 				s.add("ID:@" + famO1.getId() + "@");
 				s.add("Husband: " + getIndividual(famO1.getHusband()));
 				s.add("Wife: " + getIndividual(famO1.getWife()));
-				s.add("Wedding Date:" +famO1.getWeddingDate());
+				s.add("Wedding Date :" +famO1.getWeddingDate());
 				try{
 					if(!famO1.getDivorceDate().isEmpty())
 					s.add("Divorce Date: " + famO1.getDivorceDate());
