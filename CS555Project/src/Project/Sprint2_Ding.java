@@ -73,15 +73,15 @@ public class Sprint2_Ding {
 							res = "";
 						}
 						else{
-							res = "Data Invalid: Birth Date is behind Current Date";
+							res = "Data Invalid Report: Birth Date is behind Current Date";
 						}
 					}
 					else{
-						res = "Data Invalid: Birth Date is behind Current Date";
+						res = "Data Invalid Report: Birth Date is behind Current Date";
 					}
 				}
 				else{
-					res = "Data Invalid: Birth Date is behind Current Date";
+					res = "Data Invalid Report: Birth Date is behind Current Date";
 				}
 			}
 			return res;
@@ -107,26 +107,26 @@ public class Sprint2_Ding {
 				deathMon = setMon(deathNextLine[1]);
 				deathYear = Integer.parseInt(deathNextLine[2]);			
 				if(deathYear < currentYear){
-					res = "Data Valid";
+					res = "";
 				}
 				else if(deathYear == currentYear){
 					if(deathMon < currentMonth){
-						res = "Data Valid";
+						res = "";
 					}
 					else if(deathMon == currentMonth){
 						if(deathDay <= currentDay){
-							res = "Data Valid";
+							res = "";
 						}
 						else{
-							res = "Data Invalid: Death Date is behind Current Date";
+							res = "Data Invalid Report: Death Date is behind Current Date";
 						}
 					}
 					else{
-						res = "Data Invalid: Death Date is behind Current Date";
+						res = "Data Invalid Report: Death Date is behind Current Date";
 					}
 				}
 				else{
-					res = "Data Invalid: Death Date is behind Current Date";
+					res = "Data Invalid Report: Death Date is behind Current Date";
 				}
 			}
 			return res;
@@ -163,15 +163,15 @@ public class Sprint2_Ding {
 							res = "";
 						}
 						else{
-							res = "Data Invalid: Marriage Date is behind Current Date";
+							res = "Data Invalid Report: Marriage Date is behind Current Date";
 						}
 					}
 					else{
-						res = "Data Invalid: Marriage Date is behind Current Date";
+						res = "Data Invalid Report: Marriage Date is behind Current Date";
 					}
 				}
 				else{
-					res = "Data Invalid: Marriage Date is behind Current Date";
+					res = "Data Invalid Report: Marriage Date is behind Current Date";
 				}
 			}
 			return res;
@@ -208,15 +208,15 @@ public class Sprint2_Ding {
 							res = "";
 						}
 						else{
-							res = "Data Invalid: Divorce Date is behind Current Date";
+							res = "Data Invalid Report: Divorce Date is behind Current Date";
 						}
 					}
 					else{
-						res = "Data Invalid: Divorce Date is behind Current Date";
+						res = "Data Invalid Report: Divorce Date is behind Current Date";
 					}
 				}
 				else{
-					res = "Data Invalid: Divorce Date is behind Current Date";
+					res = "Data Invalid Report: Divorce Date is behind Current Date";
 				}
 			}
 			return res;
@@ -255,19 +255,19 @@ public class Sprint2_Ding {
 							res = "";
 						}
 						else{
-							res = "Data Invalid: Birth Date is behind Death Date";
+							res = "Data Invalid Report: Birth Date is behind Death Date";
 						}
 					}
 					else{
-						res = "Data Invalid: Birth Date is behind Death Date";
+						res = "Data Invalid Report: Birth Date is behind Death Date";
 					}
 				}
 				else{
-					res = "Data Invalid: Birth Date is behind Death Date";
+					res = "Data Invalid Report: Birth Date is behind Death Date";
 				}
 			}
 			else if(indiO.getBirthDate().isEmpty() && !indiO.getDeathDate().isEmpty()){
-				res = "Data Invalid: Individual has a death date, no birth date";
+				res = "Data Invalid Report: Individual has a death date, no birth date";
 			}
 			else{
 				res = "";
