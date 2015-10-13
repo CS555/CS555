@@ -41,6 +41,45 @@ public class Sprint2_Zhu {
 		}
 	}
 	
+	public String MarrBeforeDeath(Family fam)
+	{
+		/*
+		String s="";
+		try {
+			if(!fam.getWeddingDate().isEmpty()) {
+				String marD = fam.getWeddingDate();
+				if(!fam.getDivorceDate().isEmpty()) {
+					String divD = fam.getDivorceDate();
+					int maryear,marmon,marday;
+					int divyear,divmon,divday;
+					String []marline = (marD.split("\\s+"));	
+					String []divline = (divD.split("\\s+"));	
+					maryear = Integer.parseInt(marline[2]);
+					marmon = transfMon(marline[1]);
+					marday = Integer.parseInt(marline[0]);
+					divyear = Integer.parseInt(divline[2]);
+					divmon = transfMon(divline[1]);
+					divday = Integer.parseInt(divline[0]);
+					if(maryear > divyear)
+						s = "Error! marriage should occur before divorce";
+					else if(maryear == divyear)	{
+						if(marmon > divmon)
+							s = "Error! marriage should occur before divorce";
+						else if(marmon == divmon) {
+							if(marday >= divday)
+								s = "Error! marriage should occur before divorce";
+						}
+					}
+				}
+			}
+			return s;	
+		}
+		catch(Exception e){   //avoid no marriage and divorce data.
+			return s;
+		}
+		*/
+	}
+	
 	public int transfMon(String mon) {
 		if(mon.equals("JAN"))
 			return 1;
