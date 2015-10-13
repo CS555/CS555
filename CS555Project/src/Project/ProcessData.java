@@ -209,7 +209,7 @@ public class ProcessData {
 				/*************test for sprint***********************/
 				// sprint 2 output
 				// only give error report if data is invalid, we don't report if data is valid.
-				String res1 = ustor.Spr2_D_M(famO1);
+				String res1 = ustor.Spr2_D_M(famO1); 
 				String res2 = ustor.Spr2_D_D(famO1);
 				if(!res1.equals("")){
 					s.add(res1);
@@ -237,7 +237,6 @@ public class ProcessData {
 						// sprint 4
 					}
 				}
-				
 			}
 		}
 		return s;
