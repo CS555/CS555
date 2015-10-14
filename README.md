@@ -23,3 +23,9 @@ Update Date: 10/9/2015
 
 Sprint 2 Ding updated today
 Update Date: 10/10/2015
+
+Sprint 2 updated
+Update Date: 10/12/2015
+
+Sprint 2 bug fixed
+Update Date: 10/14/2015

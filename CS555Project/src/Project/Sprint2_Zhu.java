@@ -43,6 +43,7 @@ public class Sprint2_Zhu {
 	
 	public String MarrBeforeDeath(Family fam)
 	{
+		return "";
 		/*
 		String s="";
 		try {
