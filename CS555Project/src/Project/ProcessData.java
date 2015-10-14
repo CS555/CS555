@@ -125,16 +125,16 @@ public class ProcessData {
 	}
 
 	// get the info for individuals
-	public String getIndividual(String id) {
+	public Individual getIndividual(String id) {
 		if (individuals != null && !individuals.isEmpty()) {															
 			for (int i = 0; i < individuals.size(); i++) {
 				Individual indiO = individuals.get(i);
 				if (indiO.getId().equals(id)) { 
-					return indiO.getName(); 
+					return indiO; 
 				}
 			}
 		}
-		return "No Individual Error!";
+		return null;
 	}
 
 	// print individual info
@@ -197,8 +197,8 @@ public class ProcessData {
 				
 				s.add("");
 				s.add("ID:@" + famO1.getId() + "@");
-				s.add("Husband: " + getIndividual(famO1.getHusband()));
-				s.add("Wife: " + getIndividual(famO1.getWife()));
+				s.add("Husband: " + getIndividual(famO1.getHusband()).getName());
+				s.add("Wife: " + getIndividual(famO1.getWife()).getName());
 				s.add("Wedding Date :" +famO1.getWeddingDate());
 				try{
 					if(!famO1.getDivorceDate().isEmpty())
@@ -223,7 +223,12 @@ public class ProcessData {
 				if(!res3.equals("")) {
 					s.add(res3);
 				}
-	
+				
+				String res4 = ustor.Spr2_Zhu(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
+				if(!res4.equals("")) {
+					s.add(res4);
+				}
+				
 				for(int j = 0; j < families.size(); j++){
 					Family famO2 = families.get(j);
 					if(i != j){

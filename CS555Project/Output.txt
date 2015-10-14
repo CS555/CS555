@@ -19,7 +19,6 @@ Age: 86
 ID: @I5@
 Name: Haley /Wang/
 Age: 82
-Data Valid
 
 ID: @I6@
 Name: Eric /Ding/
@@ -60,7 +59,7 @@ Age: 32
 ID: @I15@
 Name: Jay /Shi/
 Age: -74
-Data Invalid: Birth Date is behind Current Date
+Data Invalid Report: Birth Date is behind Current Date
 
 ID: @I16@
 Name: Thomas /Ding/
@@ -116,4 +115,4 @@ ID:@F6@
 Husband: Donald /Ding/
 Wife: Claire /Hou/
 Wedding Date :12 JUN 2016
-Data Invalid: Marriage Date is behind Current Date
+Data Invalid Report: Marriage Date is behind Current Date
