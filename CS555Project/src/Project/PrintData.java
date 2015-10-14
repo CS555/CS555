@@ -15,7 +15,6 @@ public class PrintData {
 		Vector<String> s = new Vector<String>();
 		
 		// get the individuals data and test
-		// output file contains project 2, sprint 1 and sprint 2 results
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
 		PrintWriter writer = new PrintWriter("Output.txt", "UTF-8");
