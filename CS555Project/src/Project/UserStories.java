@@ -56,4 +56,8 @@ public class UserStories {
 		return s.MarrBeforeDivo(fam);
 	}
 	
+	public String Spr2_Zhu(Family fam, Individual ind1,Individual ind2) {
+		Sprint2_Zhu s = new Sprint2_Zhu();
+		return s.MarrBeforeDeath(fam,ind1,ind2);
+	}
 }
