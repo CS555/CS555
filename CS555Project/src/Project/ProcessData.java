@@ -90,6 +90,7 @@ public class ProcessData {
 						String []nextLine = (line.split("\\s+"));
 						if(nextLine[1].equals("DATE")){
 							String wedDate = nextLine[2] +" "+ nextLine[3] +" "+ nextLine[4];
+							ind.setWeddingDate(wedDate);
 							fam.setWeddingDate(wedDate);
 						}
 					}
@@ -98,6 +99,7 @@ public class ProcessData {
 						String []nextLine = (line.split("\\s+"));
 						if(nextLine[1].equals("DATE")){
 							String divDate = nextLine[2] +" "+ nextLine[3] +" "+ nextLine[4];
+							ind.setDivorceDate(divDate);
 							fam.setDivorceDate(divDate);
 						}
 					}
@@ -167,6 +169,18 @@ public class ProcessData {
 				if(!res3.equals("")){
 					s.add(res3);
 				}
+				
+				// sprint 3 output
+				// only give error report if data is invalid
+				String res4 = ustor.Spr3_Ding_US2(indiO1);
+				String res5 = ustor.Spr3_Ding_US7(indiO1);
+				if(!res4.equals("")){
+					s.add(res4);
+				}
+				if(!res5.equals("")){
+					s.add(res5);
+				}
+				
 				for(int j = 0; j < individuals.size(); j++){
 					Individual indiO2 = individuals.get(j);
 					if (i != j){
@@ -174,8 +188,6 @@ public class ProcessData {
 						// sprint 1 output
 						String tmp = ustor.Spr1_D(indiO1, indiO2);
 						if(!tmp.equals("")) s.add(tmp);
-						
-						// sprint 3
 						
 						// sprint 4
 					}
