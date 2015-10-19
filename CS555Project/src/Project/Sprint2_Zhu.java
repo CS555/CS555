@@ -44,6 +44,7 @@ public class Sprint2_Zhu {
 	
 	public String MarrBeforeDeath(Family fam, Individual ind, Individual ind1)
 	{
+		System.out.println(fam.getId()+" " + ind.getId()+" " +ind1.getId());
 		String s="";
 		try {
 			if(!fam.getWeddingDate().isEmpty()) {
@@ -55,33 +56,40 @@ public class Sprint2_Zhu {
 				marday = Integer.parseInt(marline[0]);
 				String indD = ind.getDeathDate();
 				String ind1D = ind1.getDeathDate();
-				String []indline = (indD.split("\\s+"));
-				String []ind1line = (ind1D.split("\\s+"));
-				int indyear,indmon,indday,ind1year,ind1mon,ind1day;
-				indyear = Integer.parseInt(indline[2]);
-				indmon = transfMon(indline[1]);
-				indday = Integer.parseInt(indline[0]);
-				ind1year = Integer.parseInt(indline[2]);
-				ind1mon = transfMon(indline[1]);
-				ind1day = Integer.parseInt(indline[0]);
-				if(maryear > indyear)
-					s = "Error! marriage should occur before death";
-				else if(maryear == indyear)	{
-					if(marmon > indmon)
+				if(indD!=null)
+				{
+					String []indline = (indD.split("\\s+"));
+					int indyear,indmon,indday;
+					indyear = Integer.parseInt(indline[2]);
+					indmon = transfMon(indline[1]);
+					indday = Integer.parseInt(indline[0]);
+					if(maryear > indyear)
 						s = "Error! marriage should occur before death";
-					else if(marmon == indmon) {
-						if(marday >= indday)
+					else if(maryear == indyear)	{
+						if(marmon > indmon)
 							s = "Error! marriage should occur before death";
+						else if(marmon == indmon) {
+							if(marday >= indday)
+								s = "Error! marriage should occur before death";
+						}
 					}
 				}
-				if(maryear > ind1year)
-					s = "Error! marriage should occur before death";
-				else if(maryear == ind1year)	{
-					if(marmon > ind1mon)
+				if(ind1D!=null)
+				{
+					String []ind1line = (ind1D.split("\\s+"));
+					int ind1year,ind1mon,ind1day;		
+					ind1year = Integer.parseInt(ind1line[2]);
+					ind1mon = transfMon(ind1line[1]);
+					ind1day = Integer.parseInt(ind1line[0]);
+					if(maryear > ind1year)
 						s = "Error! marriage should occur before death";
-					else if(marmon == ind1mon) {
-						if(marday >= ind1day)
+					else if(maryear == ind1year)	{
+						if(marmon > ind1mon)
 							s = "Error! marriage should occur before death";
+						else if(marmon == ind1mon) {
+							if(marday >= ind1day)
+								s = "Error! marriage should occur before death";
+						}
 					}
 				}
 			}
