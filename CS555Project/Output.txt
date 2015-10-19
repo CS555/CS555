@@ -1,118 +1,100 @@
 Individuals Info:
 
 ID: @I1@
-Name: Jermaine /Ding/
-Age: 22
-
-ID: @I2@
-Name: Andy /Ding/
-Age: 55
-
-ID: @I3@
-Name: Alex /Xiong/
-Age: 52
-
-ID: @I4@
-Name: Jim /Xiong/
-Age: 86
-
-ID: @I5@
-Name: Haley /Wang/
-Age: 82
-
-ID: @I6@
-Name: Eric /Ding/
-Age: 85
-
-ID: @I7@
-Name: Nancy /Wang/
-Age: 81
-
-ID: @I8@
-Name: Joanna /Ding/
-Age: 57
-
-ID: @I9@
-Name: Emily /Ding/
-Age: 53
-
-ID: @I10@
-Name: Donald /Ding/
-Age: 52
-
-ID: @I11@
-Name: Jason /Sun/
-Age: 58
-
-ID: @I12@
-Name: John /Shi/
-Age: 54
-
-ID: @I13@
-Name: Claire /Hou/
-Age: 45
-
-ID: @I14@
-Name: Leah /Sun/
-Age: 32
-
-ID: @I15@
-Name: Jay /Shi/
-Age: -74
+Name: A /A/
+Age: -25
 Data Invalid Report: Birth Date is behind Current Date
 
-ID: @I16@
-Name: Thomas /Ding/
-Age: 19
+ID: @I2@
+Name: C /C/
+Age: 45
 
-ID: @I17@
-Name: Julia /Dennis/
-Age: 48
+ID: @I3@
+Name: B /B/
+Age: 45
 
-ID: @I18@
-Name: Zeke /Shi/
-Age: 27
+ID: @I4@
+Name: E /E/
+Age: 59
+Data Invalid Report: Birth Date is behind Death Date
+
+ID: @I5@
+Name: D /F/
+Age: 226
+
+ID: @I6@
+Name: F /F/
+Age: 49
+
+ID: @I7@
+Name: G /G/
+Age: 47
+
+ID: @I8@
+Name: H /H/
+Age: 14
+
+ID: @I9@
+Name: I /I/
+Age: 26
+
+ID: @I10@
+Name: J /J/
+Age: 24
+
+ID: @I11@
+Name: K /K/
+Age: 23
+Data Invalid Report: Same individual ID @I11with name: K /K/W /W/
+
+ID: @I12@
+Name: L /L/
+Age: 49
+
+ID: @I11@
+Name: W /W/
+Age: 4
+Data Invalid Report: Same individual ID @I11with name: W /W/K /K/
 
 
 
 Family Info
 
 ID:@F1@
-Husband: Andy /Ding/
-Wife: Alex /Xiong/
-Wedding Date :8 SEP 1989
+Husband: H /H/
+Wife: A /A/
+Wedding Date :18 AUG 1999
+Data Invalid Report: Same marriage date18 AUG 1999
 
 ID:@F2@
-Husband: Eric /Ding/
-Wife: Nancy /Wang/
-Wedding Date :9 JUL 1955
+Husband: C /C/
+Wife: B /B/
+Wedding Date :1 APR 2020
+Data Invalid Report: Marriage Date is behind Current Date
 
 ID:@F3@
-Husband: Jim /Xiong/
-Wife: Haley /Wang/
-Wedding Date :9 JUN 1985
-
-ID:@F4@
-Husband: Jason /Sun/
-Wife: Joanna /Ding/
-Wedding Date :7 MAY 1980
+Husband: E /E/
+Wife: D /F/
+Wedding Date :9 MAR 1969
+Error! marriage should occur before death
 
 ID:@F5@
-Husband: John /Shi/
-Wife: Emily /Ding/
-Wedding Date :16 SEP 1986
-Error Report: One husband(@I12@) two wife
-
-ID:@F7@
-Husband: John /Shi/
-Wife: Julia /Dennis/
-Wedding Date :8 JUN 1983
-Divorce Date: 8 MAY 1983
+Husband: G /G/
+Wife: F /F/
+Wedding Date :16 AUG 1989
+Divorce Date: 15 SEP 1986
 Error! marriage should occur before divorce
-Error Report: One husband(@I12@) two wife
+Data Invalid Report: One husband(@I7@) two wife
 
 ID:@F6@
-Husband: Donald /Ding/
-Wife: Claire /Hou/
-Wedding Date :12 JUN 2016
-Data Invalid Report: Marriage Date is behind Current Date
+Husband: G /G/
+Wife: L /L/
+Wedding Date :18 AUG 1999
+Data Invalid Report: Same marriage date18 AUG 1999
+Data Invalid Report: One husband(@I7@) two wife
+
+ID:@F8@
+Husband: J /J/
+Wife: I /I/
+Wedding Date :29 OCT 2000
+Divorce Date: 18 SEP 2010
