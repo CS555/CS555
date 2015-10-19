@@ -40,6 +40,16 @@ public class UserStories {
 		return s.checkBirthBeforeDeath(individualObject);
 	}
 	
+	public String Spr3_Ding_US2(Individual individualObject){
+		Sprint3_Ding s = new Sprint3_Ding();
+		return s.checkBirthBeforeMarr(individualObject);
+	}
+	
+	public String Spr3_Ding_US7(Individual individualObject){
+		Sprint3_Ding s = new Sprint3_Ding();
+		return s.currentAgeCheck(individualObject);
+	}
+	
 	public String Spr1_Zhu(Individual ind1,Individual ind2) {
 
 		Sprint1_Zhu s = new Sprint1_Zhu();

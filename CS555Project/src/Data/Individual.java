@@ -13,7 +13,25 @@ public class Individual {
 	private char sex;
 	private String birthDate;
 	private String deathDate;
+	private String weddingDate;
+	private String divorceDate;
 	private char deceased;
+
+	public String getWeddingDate() {
+		return weddingDate;
+	}
+
+	public void setWeddingDate(String weddingDate) {
+		this.weddingDate = weddingDate;
+	}
+
+	public String getDivorceDate() {
+		return divorceDate;
+	}
+
+	public void setDivorceDate(String divorceDate) {
+		this.divorceDate = divorceDate;
+	}
 
 	// get id 
 	public String getId() {
