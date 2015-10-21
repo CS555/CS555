@@ -11,7 +11,7 @@ public class Sprint1_Ding {
 		
 		if(indiO1.getId().equals(indiO2.getId())) {
 			return "Data Invalid Report: Same individual ID @" + indiO1.getId() +
-					"with name: " + indiO1.getName() + indiO2.getName();
+					" with name: " + indiO1.getName() + indiO2.getName();
 		}	
 		return "";
 	}
@@ -29,7 +29,7 @@ public class Sprint1_Ding {
 		}
 
 		if(famO1.getWeddingDate().equals(famO2.getWeddingDate())) {
-		    return "Data Invalid Report: Same marriage date" + famO1.getWeddingDate();
+		    return "Data Invalid Report: Same marriage date " + famO1.getWeddingDate();
 		}
 		return "";
 	}

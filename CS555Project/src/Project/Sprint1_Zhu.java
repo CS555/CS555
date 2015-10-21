@@ -10,11 +10,11 @@ public class Sprint1_Zhu {
 	public String uniqueNaBir(Individual ind1,Individual ind2) {
 		String s="";
 		if(ind1.getName().equals(ind2.getName())) {	
-			s = "Same individual Name" + ind1.getName() +
+			s = "Data Invalid Report: Same individual Name" + ind1.getName() +
 					"with ID: " + ind1.getId() + ind2.getId();
 		}
 		if(ind1.getBirthDate().equals(ind2.getBirthDate())) {
-			s = "Same individual birth date" + ind1.getBirthDate() +
+			s = "Data Invalid Report: Same individual birth date" + ind1.getBirthDate() +
 					"with Name: " + ind1.getName() + ind2.getGivenName();
 		}
 		return s;
