@@ -21,6 +21,7 @@ Data Invalid Report: Birth Date is behind Death Date
 ID: @I5@
 Name: D /F/
 Age: 226
+Data Invalid Report: This individual's age is greater than 150
 
 ID: @I6@
 Name: F /F/
@@ -45,7 +46,7 @@ Age: 24
 ID: @I11@
 Name: K /K/
 Age: 23
-Data Invalid Report: Same individual ID @I11with name: K /K/W /W/
+Data Invalid Report: Same individual ID @I11 with name: K /K/W /W/
 
 ID: @I12@
 Name: L /L/
@@ -54,7 +55,8 @@ Age: 49
 ID: @I11@
 Name: W /W/
 Age: 4
-Data Invalid Report: Same individual ID @I11with name: W /W/K /K/
+Data Invalid Report: Birth Date is behind Wedding Date
+Data Invalid Report: Same individual ID @I11 with name: W /W/K /K/
 
 
 
@@ -64,7 +66,7 @@ ID:@F1@
 Husband: H /H/
 Wife: A /A/
 Wedding Date :18 AUG 1999
-Data Invalid Report: Same marriage date18 AUG 1999
+Data Invalid Report: Same marriage date 18 AUG 1999
 
 ID:@F2@
 Husband: C /C/
@@ -76,21 +78,21 @@ ID:@F3@
 Husband: E /E/
 Wife: D /F/
 Wedding Date :9 MAR 1969
-Error! marriage should occur before death
+Data Invalid Report: Marriage should occur before death
 
 ID:@F5@
 Husband: G /G/
 Wife: F /F/
 Wedding Date :16 AUG 1989
 Divorce Date: 15 SEP 1986
-Error! marriage should occur before divorce
+Data Invalid Report: Marriage should occur before divorce
 Data Invalid Report: One husband(@I7@) two wife
 
 ID:@F6@
 Husband: G /G/
 Wife: L /L/
 Wedding Date :18 AUG 1999
-Data Invalid Report: Same marriage date18 AUG 1999
+Data Invalid Report: Same marriage date 18 AUG 1999
 Data Invalid Report: One husband(@I7@) two wife
 
 ID:@F8@

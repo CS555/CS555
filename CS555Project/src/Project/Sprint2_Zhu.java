@@ -24,13 +24,13 @@ public class Sprint2_Zhu {
 					divmon = transfMon(divline[1]);
 					divday = Integer.parseInt(divline[0]);
 					if(maryear > divyear)
-						s = "Error! marriage should occur before divorce";
+						s = "Data Invalid Report: Marriage should occur before divorce";
 					else if(maryear == divyear)	{
 						if(marmon > divmon)
-							s = "Error! marriage should occur before divorce";
+							s = "Data Invalid Report: Marriage should occur before divorce";
 						else if(marmon == divmon) {
 							if(marday >= divday)
-								s = "Error! marriage should occur before divorce";
+								s = "Data Invalid Report: Marriage should occur before divorce";
 						}
 					}
 				}
@@ -44,7 +44,6 @@ public class Sprint2_Zhu {
 	
 	public String MarrBeforeDeath(Family fam, Individual ind, Individual ind1)
 	{
-		System.out.println(fam.getId()+" " + ind.getId()+" " +ind1.getId());
 		String s="";
 		try {
 			if(!fam.getWeddingDate().isEmpty()) {
@@ -64,13 +63,13 @@ public class Sprint2_Zhu {
 					indmon = transfMon(indline[1]);
 					indday = Integer.parseInt(indline[0]);
 					if(maryear > indyear)
-						s = "Error! marriage should occur before death";
+						s = "Data Invalid Report: Marriage should occur before death";
 					else if(maryear == indyear)	{
 						if(marmon > indmon)
-							s = "Error! marriage should occur before death";
+							s = "Data Invalid Report: Marriage should occur before death";
 						else if(marmon == indmon) {
 							if(marday >= indday)
-								s = "Error! marriage should occur before death";
+								s = "Data Invalid Report: Marriage should occur before death";
 						}
 					}
 				}
@@ -82,13 +81,13 @@ public class Sprint2_Zhu {
 					ind1mon = transfMon(ind1line[1]);
 					ind1day = Integer.parseInt(ind1line[0]);
 					if(maryear > ind1year)
-						s = "Error! marriage should occur before death";
+						s = "Data Invalid Report: Marriage should occur before death";
 					else if(maryear == ind1year)	{
 						if(marmon > ind1mon)
-							s = "Error! marriage should occur before death";
+							s = "Data Invalid Report: Marriage should occur before death";
 						else if(marmon == ind1mon) {
 							if(marday >= ind1day)
-								s = "Error! marriage should occur before death";
+								s = "Data Invalid Report: Marriage should occur before death";
 						}
 					}
 				}
