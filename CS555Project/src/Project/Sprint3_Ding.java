@@ -46,6 +46,7 @@ public class Sprint3_Ding {
 		return mon;
 	}
 	
+	//check birthdate before marriage date
 	public String checkBirthBeforeMarr(Individual indiO){
 		try{
 			String res ="";
@@ -99,6 +100,7 @@ public class Sprint3_Ding {
 		}
 	}
 	
+	//check current age, if it is greater than 150
 	public String currentAgeCheck(Individual ind) {
 		int age  =0;
 		String res = "";
@@ -137,5 +139,4 @@ public class Sprint3_Ding {
 		}
 		return res;
 	}
-	
 }
