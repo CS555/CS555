@@ -38,3 +38,6 @@ Update Date: 10/19/2015
 
 Bug fixed on Sprint 2
 Update Date: 10/21/2015
+
+Sprint 3 Updated 
+Update Date: 10/23/2015
