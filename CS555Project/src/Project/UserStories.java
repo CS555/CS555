@@ -70,4 +70,8 @@ public class UserStories {
 		Sprint2_Zhu s = new Sprint2_Zhu();
 		return s.MarrBeforeDeath(fam,ind1,ind2);
 	}
+	public String Spr3_Zhu(Family fam, Individual ind1,Individual ind2) {
+		Sprint3_Zhu s = new Sprint3_Zhu();
+		return s.DivorBeforeDeath(fam,ind1,ind2);
+	}
 }

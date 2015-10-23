@@ -100,3 +100,4 @@ Husband: J /J/
 Wife: I /I/
 Wedding Date :29 OCT 2000
 Divorce Date: 18 SEP 2010
+Data Invalid Report: Divorce should occur before death
