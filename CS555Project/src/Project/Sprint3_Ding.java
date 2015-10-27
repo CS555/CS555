@@ -47,6 +47,7 @@ public class Sprint3_Ding {
 	}
 	
 	//check birthdate before marriage date
+	//only output invalid data
 	public String checkBirthBeforeMarr(Individual indiO){
 		try{
 			String res ="";
@@ -101,6 +102,7 @@ public class Sprint3_Ding {
 	}
 	
 	//check current age, if it is greater than 150
+	//only output invalid data
 	public String currentAgeCheck(Individual ind) {
 		int age  =0;
 		String res = "";
