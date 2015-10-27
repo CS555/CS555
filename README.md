@@ -41,3 +41,6 @@ Update Date: 10/21/2015
 
 Sprint 3 Updated 
 Update Date: 10/23/2015
+
+Sprint 3 Updated today
+Update Date: 10/27/2015
