@@ -242,6 +242,7 @@ public class ProcessData {
 				}
 				
 				//sprint 3 output
+				// only give error report if data is invalid
 				String res5 = ustor.Spr3_Zhu(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
 				if(!res5.equals("")) {
 					s.add(res5);
