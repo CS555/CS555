@@ -241,6 +241,8 @@ public class ProcessData {
 					s.add(res4);
 				}
 				
+				//sprint 3 output
+				// only give error report if data is invalid
 				String res5 = ustor.Spr3_Zhu(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
 				if(!res5.equals("")) {
 					s.add(res5);
@@ -253,13 +255,10 @@ public class ProcessData {
 						// sprint 1 output
 						String tmp = ustor.Spr1_D(famO1, famO2);
 						if(!tmp.equals(""))		s.add(tmp);
-												
-						// sprint 3
 						
 						// sprint 4
 					}
 				}
-				
 			}
 		}
 		return s;
