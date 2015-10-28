@@ -6,6 +6,7 @@ import Data.Individual;
 
 public class Sprint3_Ding {
 	//Sprint 3
+	//use function setMon to transfer string mon to integer mon
 	public int setMon(String str){
 		int mon=0;
 		if(str.equals("JAN")){
