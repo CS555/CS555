@@ -8,10 +8,12 @@ Data Invalid Report: Birth Date is behind Current Date
 ID: @I2@
 Name: C /C/
 Age: 45
+Data Invalid Report: Same individual birth date 1 FEB 1970 with Name: C /C/null
 
 ID: @I3@
 Name: B /B/
 Age: 45
+Data Invalid Report: Same individual birth date 1 FEB 1970 with Name: B /B/null
 
 ID: @I4@
 Name: E /E/
@@ -66,6 +68,8 @@ ID:@F1@
 Husband: H /H/
 Wife: A /A/
 Wedding Date :18 AUG 1999
+Data Invalid Report: Husband(I8) in family F1 is female
+Data Invalid Report: Wife(I1) in family F1 is male
 Data Invalid Report: Same marriage date 18 AUG 1999
 
 ID:@F2@

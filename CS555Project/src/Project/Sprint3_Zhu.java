@@ -60,7 +60,24 @@ public class Sprint3_Zhu {
 		}
 		catch(Exception e){   //avoid no marriage and divorce data.
 			return s;
+		}		
+	}
+	
+	public String CurrectGender(Family fam, Individual ind, Individual ind1)
+	{
+		String s="";
+		if(ind.getSex()=='F')
+			s = "Data Invalid Report: Husband(" + ind.getId() + ") in family " + fam.getId() + " is female";
+		if(ind1.getSex()=='M')
+		{
+			if(s.length() == 0)
+				s = "Data Invalid Report: Wife in family " + fam.getId() + " is male";
+			else
+			{
+				String newLine = System.getProperty("line.separator"); 
+				s = s + newLine + "Data Invalid Report: Wife(" + ind1.getId() + ") in family " + fam.getId() + " is male";
+			}
 		}
-		
+		return s;	
 	}
 }
