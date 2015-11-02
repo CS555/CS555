@@ -50,28 +50,32 @@ public class UserStories {
 		return s.currentAgeCheck(individualObject);
 	}
 	
-	public String Spr1_Zhu(Individual ind1,Individual ind2) {
+	public String Spr1_Zhu_U23(Individual ind1,Individual ind2) {
 
 		Sprint1_Zhu s = new Sprint1_Zhu();
 		return s.uniqueNaBir(ind1, ind2);
 	}
 	
-	public String Spr1_Zhu(Individual ind1) {
+	public String Spr1_Zhu_U27(Individual ind1) {
 		Sprint1_Zhu s = new Sprint1_Zhu();
 		return s.listCurrentAge(ind1);
 	}
 	
-	public String Spr2_Zhu(Family fam) {
+	public String Spr2_Zhu_U04(Family fam) {
 		Sprint2_Zhu s = new Sprint2_Zhu();
 		return s.MarrBeforeDivo(fam);
 	}
 	
-	public String Spr2_Zhu(Family fam, Individual ind1,Individual ind2) {
+	public String Spr2_Zhu_U05(Family fam, Individual ind1,Individual ind2) {
 		Sprint2_Zhu s = new Sprint2_Zhu();
 		return s.MarrBeforeDeath(fam,ind1,ind2);
 	}
-	public String Spr3_Zhu(Family fam, Individual ind1,Individual ind2) {
+	public String Spr3_Zhu_U06(Family fam, Individual ind1,Individual ind2) {
 		Sprint3_Zhu s = new Sprint3_Zhu();
 		return s.DivorBeforeDeath(fam,ind1,ind2);
+	}
+	public String Spr3_Zhu_U21(Family fam, Individual ind1, Individual ind2) {
+		Sprint3_Zhu s = new Sprint3_Zhu();
+		return s.CurrectGender(fam,ind1,ind2);
 	}
 }

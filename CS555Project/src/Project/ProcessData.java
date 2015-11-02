@@ -152,7 +152,7 @@ public class ProcessData {
 				s.add("");
 				s.add("ID: @" + indiO1.getId() + "@");
 				s.add("Name: " + indiO1.getName());
-				s.add(ustor.Spr1_Zhu(indiO1));
+				s.add(ustor.Spr1_Zhu_U27(indiO1));
 					
 				/*************test for sprint***********************/
 				// sprint 2 output
@@ -188,6 +188,9 @@ public class ProcessData {
 						// sprint 1 output
 						String tmp = ustor.Spr1_D(indiO1, indiO2);
 						if(!tmp.equals("")) s.add(tmp);
+						
+						String tmp1 = ustor.Spr1_Zhu_U23(indiO1, indiO2);
+						if(!tmp1.equals("")) s.add(tmp1);
 						
 						// sprint 4
 					}
@@ -231,21 +234,26 @@ public class ProcessData {
 				}
 				
 				
-				String res3 = ustor.Spr2_Zhu(famO1);
+				String res3 = ustor.Spr2_Zhu_U04(famO1);
 				if(!res3.equals("")) {
 					s.add(res3);
 				}
 				
-				String res4 = ustor.Spr2_Zhu(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
+				String res4 = ustor.Spr2_Zhu_U05(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
 				if(!res4.equals("")) {
 					s.add(res4);
 				}
 				
 				//sprint 3 output
 				// only give error report if data is invalid
-				String res5 = ustor.Spr3_Zhu(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
+				String res5 = ustor.Spr3_Zhu_U06(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
 				if(!res5.equals("")) {
 					s.add(res5);
+				}
+				
+				String res6 = ustor.Spr3_Zhu_U21(famO1,getIndividual(famO1.getHusband()),getIndividual(famO1.getWife()));
+				if(!res6.equals("")) {
+					s.add(res6);
 				}
 				
 				for(int j = 0; j < families.size(); j++){
