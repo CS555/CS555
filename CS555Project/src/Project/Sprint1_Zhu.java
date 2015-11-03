@@ -6,6 +6,7 @@ import Data.Individual;
 
 public class Sprint1_Zhu {
 	
+	Helper help = new Helper();
 	// test Unique name and birth date
 	public String uniqueNaBir(Individual ind1,Individual ind2) {
 		String s="";
@@ -32,30 +33,7 @@ public class Sprint1_Zhu {
 				int birthYear,birthMon,birthDay;                              
 				String []nextLine = (s.split("\\s+"));	
 				birthDay = Integer.parseInt(nextLine[0]);
-				if(nextLine[1].equals("JAN"))
-					birthMon = 1;
-				else if(nextLine[1].equals("FEB"))
-					birthMon = 2;
-				else if(nextLine[1].equals("MAR"))
-					birthMon = 3;
-				else if(nextLine[1].equals("APR"))
-					birthMon = 4;
-				else if(nextLine[1].equals("MAY"))
-					birthMon = 5;
-				else if(nextLine[1].equals("JUN"))
-					birthMon = 6;
-				else if(nextLine[1].equals("JUL"))
-					birthMon = 7;
-				else if(nextLine[1].equals("AUG"))
-					birthMon = 8;
-				else if(nextLine[1].equals("SEP"))
-					birthMon = 9;
-				else if(nextLine[1].equals("OCT"))
-					birthMon = 10;
-				else if(nextLine[1].equals("NOV"))
-					birthMon = 11;
-				else
-					birthMon = 12;
+				birthMon = help.transfMon(nextLine[1]);
 				birthYear = Integer.parseInt(nextLine[2]);
 				currentYear = cal.get(Calendar.YEAR);
 				currentMon = cal.get(Calendar.MONTH)+1;
