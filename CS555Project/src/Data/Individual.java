@@ -17,22 +17,6 @@ public class Individual {
 	private String divorceDate;
 	private char deceased;
 
-	public String getWeddingDate() {
-		return weddingDate;
-	}
-
-	public void setWeddingDate(String weddingDate) {
-		this.weddingDate = weddingDate;
-	}
-
-	public String getDivorceDate() {
-		return divorceDate;
-	}
-
-	public void setDivorceDate(String divorceDate) {
-		this.divorceDate = divorceDate;
-	}
-
 	// get id 
 	public String getId() {
 		return id;
@@ -110,5 +94,21 @@ public class Individual {
 
 	public void setDeceased(char deceased) {
 		this.deceased = deceased;
+	}
+	
+	public String getWeddingDate() {
+		return weddingDate;
+	}
+
+	public void setWeddingDate(String weddingDate) {
+		this.weddingDate = weddingDate;
+	}
+
+	public String getDivorceDate() {
+		return divorceDate;
+	}
+
+	public void setDivorceDate(String divorceDate) {
+		this.divorceDate = divorceDate;
 	}
 }
