@@ -5,48 +5,8 @@ import java.util.Calendar;
 import Data.Individual;
 
 public class Sprint3_Ding {
-	//Sprint 3
-	//use function setMon to transfer string mon to integer mon
-	public int setMon(String str){
-		int mon=0;
-		if(str.equals("JAN")){
-			mon = 1;
-		}
-		else if(str.equals("FEB")){
-			mon = 2;
-		}
-		else if(str.equals("MAR")){
-			mon = 3;
-		}
-		else if(str.equals("APR")){
-			mon = 4;
-		}
-		else if(str.equals("MAY")){
-			mon = 5;
-		}
-		else if(str.equals("JUN")){
-			mon = 6;
-		}
-		else if(str.equals("JUL")){
-			mon = 7;
-		}
-		else if(str.equals("AUG")){
-			mon = 8;
-		}
-		else if(str.equals("SEP")){
-			mon = 9;
-		}
-		else if(str.equals("OCT")){
-			mon = 10;
-		}
-		else if(str.equals("NOV")){
-			mon = 11;
-		}
-		else
-			mon = 12;
-		return mon;
-	}
 	
+	Helper helper = new Helper();
 	//check birthdate before marriage date
 	//only output invalid data
 	public String checkBirthBeforeMarr(Individual indiO){
@@ -62,8 +22,8 @@ public class Sprint3_Ding {
 				String []wednextLine = (wed.split("\\s+"));
 				birthDay = Integer.parseInt(birnextLine[0]);
 				wedDay = Integer.parseInt(wednextLine[0]);
-				birthMon = setMon(birnextLine[1]);
-				wedMon = setMon(wednextLine[1]);
+				birthMon = helper.transfMon(birnextLine[1]);
+				wedMon = helper.transfMon(wednextLine[1]);
 				birthYear = Integer.parseInt(birnextLine[2]);
 				wedYear = Integer.parseInt(wednextLine[2]);
 				if(birthYear < wedYear){
@@ -116,7 +76,7 @@ public class Sprint3_Ding {
 				int birthYear,birthMon,birthDay;                              
 				String []nextLine = (s.split("\\s+"));	
 				birthDay = Integer.parseInt(nextLine[0]);
-				birthMon = setMon(nextLine[1]);
+				birthMon = helper.transfMon(nextLine[1]);
 				birthYear = Integer.parseInt(nextLine[2]);
 				currentYear = cal.get(Calendar.YEAR);
 				currentMon = cal.get(Calendar.MONTH)+1;
