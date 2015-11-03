@@ -12,7 +12,7 @@ public class Sprint3_Ding {
 	public String checkBirthBeforeMarr(Individual indiO){
 		try{
 			String res ="";
-			if(!indiO.getBirthDate().isEmpty() && !indiO.getWeddingDate().isEmpty()){
+			if(!indiO.getBirthDate().isEmpty() && indiO.getWeddingDate() != null){
 				
 				String birth = indiO.getBirthDate();
 				int birthYear,birthMon,birthDay;  

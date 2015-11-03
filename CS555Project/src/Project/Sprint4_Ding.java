@@ -13,31 +13,36 @@ public class Sprint4_Ding {
 	public String checkMarriageAfter14(Individual indiO){
 		try{
 			String res ="";
-			if(!indiO.getBirthDate().isEmpty() && !indiO.getWeddingDate().isEmpty()){
-				
-				String birth = indiO.getBirthDate();
-				int birthYear,birthMon,birthDay;  
-				String wed = indiO.getWeddingDate();
-				int wedYear, wedMon, wedDay;
-				String []birnextLine = (birth.split("\\s+"));
-				String []wednextLine = (wed.split("\\s+"));
-				birthDay = Integer.parseInt(birnextLine[0]);
-				wedDay = Integer.parseInt(wednextLine[0]);
-				birthMon = helper.transfMon(birnextLine[1]);
-				wedMon = helper.transfMon(wednextLine[1]);
-				birthYear = Integer.parseInt(birnextLine[2]);
-				wedYear = Integer.parseInt(wednextLine[2]);
-				if(birthYear < wedYear){
-					if(wedYear - birthYear > 14){
-						res = "";
-					}
-					else if(wedYear - birthYear == 14){
-						if(birthMon < wedMon){
+			
+			if(!indiO.getBirthDate().isEmpty()){
+				if(indiO.getWeddingDate() != null){
+					String birth = indiO.getBirthDate();
+					int birthYear,birthMon,birthDay;  
+					String wed = indiO.getWeddingDate();
+					int wedYear, wedMon, wedDay;
+					String []birnextLine = (birth.split("\\s+"));
+					String []wednextLine = (wed.split("\\s+"));
+					birthDay = Integer.parseInt(birnextLine[0]);
+					wedDay = Integer.parseInt(wednextLine[0]);
+					birthMon = helper.transfMon(birnextLine[1]);
+					wedMon = helper.transfMon(wednextLine[1]);
+					birthYear = Integer.parseInt(birnextLine[2]);
+					wedYear = Integer.parseInt(wednextLine[2]);
+					if(birthYear < wedYear){
+						if(wedYear - birthYear > 14){
 							res = "";
 						}
-						else if(birthMon == wedMon){
-							if(birthDay < wedDay){
+						else if(wedYear - birthYear == 14){
+							if(birthMon < wedMon){
 								res = "";
+							}
+							else if(birthMon == wedMon){
+								if(birthDay < wedDay){
+									res = "";
+								}
+								else{
+									res = "Data Invalid Report: Marriage is before 14 years old";
+								}
 							}
 							else{
 								res = "Data Invalid Report: Marriage is before 14 years old";
@@ -51,9 +56,6 @@ public class Sprint4_Ding {
 						res = "Data Invalid Report: Marriage is before 14 years old";
 					}
 				}
-				else{
-					res = "Data Invalid Report: Marriage is before 14 years old";
-				}
 			}
 			else if(indiO.getBirthDate().isEmpty() && !indiO.getWeddingDate().isEmpty()){
 				res = "Data Invalid Report: Individual has a wedding date, no birth date";
@@ -64,7 +66,7 @@ public class Sprint4_Ding {
 			return res;
 		}
 		catch(Exception e){
-			return "Data Invalid Report: Individual neither has a wedding date not a birth date";
+			return "Data Invalid Report: Individual neither has a wedding date nor a birth date";
 		}
 	}
 	

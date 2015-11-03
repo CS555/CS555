@@ -4,70 +4,58 @@ ID: @I1@
 Name: A /A/
 Age: -25
 Data Invalid Report: Birth Date is behind Current Date
-Data Invalid Report: Individual neither has a wedding date not a birth date
 
 ID: @I2@
 Name: C /C/
 Age: 45
-Data Invalid Report: Individual neither has a wedding date not a birth date
 Data Invalid Report: Same individual birth date 1 FEB 1970 with Name: C /C/null
 
 ID: @I3@
 Name: B /B/
 Age: 45
-Data Invalid Report: Individual neither has a wedding date not a birth date
 Data Invalid Report: Same individual birth date 1 FEB 1970 with Name: B /B/null
 
 ID: @I4@
 Name: E /E/
 Age: 59
 Data Invalid Report: Birth Date is behind Death Date
-Data Invalid Report: Individual neither has a wedding date not a birth date
 
 ID: @I5@
 Name: D /F/
 Age: 226
 Data Invalid Report: This individual's age is greater than 150
-Data Invalid Report: Individual neither has a wedding date not a birth date
 
 ID: @I6@
 Name: F /F/
 Age: 49
-Data Invalid Report: Individual neither has a wedding date not a birth date
 
 ID: @I7@
 Name: G /G/
 Age: 47
-Data Invalid Report: Individual neither has a wedding date not a birth date
 G /G/
 
 ID: @I8@
 Name: H /H/
 Age: 14
-Data Invalid Report: Individual neither has a wedding date not a birth date
 H /H/
 
 ID: @I9@
 Name: I /I/
 Age: 26
-Data Invalid Report: Individual neither has a wedding date not a birth date
 
 ID: @I10@
 Name: J /J/
 Age: 24
-Data Invalid Report: Individual neither has a wedding date not a birth date
 J /J/
 
 ID: @I11@
 Name: K /K/
 Age: 23
-Data Invalid Report: Individual neither has a wedding date not a birth date
 Data Invalid Report: Same individual ID @I11 with name: K /K/W /W/
 
 ID: @I12@
 Name: L /L/
 Age: 49
-Data Invalid Report: Individual neither has a wedding date not a birth date
 L /L/
 
 ID: @I11@
