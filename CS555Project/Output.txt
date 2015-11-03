@@ -32,12 +32,10 @@ Age: 49
 ID: @I7@
 Name: G /G/
 Age: 47
-G /G/
 
 ID: @I8@
 Name: H /H/
 Age: 14
-H /H/
 
 ID: @I9@
 Name: I /I/
@@ -46,7 +44,6 @@ Age: 26
 ID: @I10@
 Name: J /J/
 Age: 24
-J /J/
 
 ID: @I11@
 Name: K /K/
@@ -56,13 +53,11 @@ Data Invalid Report: Same individual ID @I11 with name: K /K/W /W/
 ID: @I12@
 Name: L /L/
 Age: 49
-L /L/
 
 ID: @I11@
 Name: W /W/
 Age: 4
 Data Invalid Report: Birth Date is behind Wedding Date
-Data Invalid Report: Marriage is before 14 years old
 Data Invalid Report: Same individual ID @I11 with name: W /W/K /K/
 
 
