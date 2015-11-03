@@ -1,5 +1,7 @@
 package Project;
 
+import java.util.List;
+
 import Data.Family;
 import Data.Individual;
 
@@ -48,6 +50,16 @@ public class UserStories {
 	public String Spr3_Ding_US7(Individual individualObject){
 		Sprint3_Ding s = new Sprint3_Ding();
 		return s.currentAgeCheck(individualObject);
+	}
+	
+	public String Spr4_Ding_US10(Individual individualObject){
+		Sprint4_Ding s = new Sprint4_Ding();
+		return s.checkMarriageAfter14(individualObject);
+	}
+	
+	public List<String> Spr4_Ding_US38(Individual individualObject){
+		Sprint4_Ding s = new Sprint4_Ding();
+		return s.checkUpcomingBirthdays(individualObject);
 	}
 	
 	public String Spr1_Zhu_U23(Individual ind1,Individual ind2) {
