@@ -91,24 +91,24 @@ public class Sprint4_Ding {
 				if (currentYear > birthYear) { 
 					if(currentMon==12 && birthMon==1){
 						if(currentDay >= birthDay){
-							res.add(indiO.getName());
+							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
 						}
 					}
 					else if(birthMon - currentMon == 0){
 						if(currentDay <= birthDay){
-							res.add(indiO.getName());
+							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
 						}
 					}
 					else if(birthMon - currentMon == 1){
 						if(currentDay >= birthDay){
-							res.add(indiO.getName());
+							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
 						}
 					}
 			    }
 				else if(currentYear == birthYear){
 					if(currentMon==12 && birthMon==1){
 						if(currentDay >= birthDay){
-							res.add(indiO.getName());
+							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
 						}
 					}
 				}
