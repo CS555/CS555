@@ -47,3 +47,6 @@ Update Date: 10/27/2015
 
 Sprint 3 finished today and Sprint 4 get started
 Update Date: 11/2/2015
+
+Update on sprint today
+Update Date: 11/4/2015
