@@ -73,7 +73,7 @@ public class Sprint4_Ding {
 	public List<String> checkUpcomingBirthdays(Individual indiO){
 		List<String> res = new ArrayList<String>();
 		try{
-			if(!indiO.getBirthDate().isEmpty())
+			if(indiO.getBirthDate() != null)
 			{
 				Calendar cal = Calendar.getInstance();
 				String s = indiO.getBirthDate();
