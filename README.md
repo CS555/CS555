@@ -50,3 +50,6 @@ Update Date: 11/2/2015
 
 Update on sprint today
 Update Date: 11/4/2015
+
+Bug fixed
+Update Date: 11/5/2015
