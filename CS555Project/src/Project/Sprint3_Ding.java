@@ -12,7 +12,7 @@ public class Sprint3_Ding {
 	public String checkBirthBeforeMarr(Individual indiO){
 		try{
 			String res ="";
-			if(!indiO.getBirthDate().isEmpty() && indiO.getWeddingDate() != null){
+			if(indiO.getBirthDate() != null && indiO.getWeddingDate() != null){
 				
 				String birth = indiO.getBirthDate();
 				int birthYear,birthMon,birthDay;  
@@ -49,7 +49,7 @@ public class Sprint3_Ding {
 					res = "Data Invalid Report: Birth Date is behind Wedding Date";
 				}
 			}
-			else if(indiO.getBirthDate().isEmpty() && !indiO.getWeddingDate().isEmpty()){
+			else if(indiO.getBirthDate() == null && indiO.getWeddingDate() != null){
 				res = "Data Invalid Report: Individual has a wedding date, no birth date";
 			}
 			else{
@@ -68,7 +68,7 @@ public class Sprint3_Ding {
 		int age  =0;
 		String res = "";
 		try{
-			if(!ind.getBirthDate().isEmpty())
+			if(ind.getBirthDate() != null)
 			{
 				Calendar cal = Calendar.getInstance();
 				String s = ind.getBirthDate();

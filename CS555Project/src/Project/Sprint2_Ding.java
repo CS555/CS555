@@ -54,7 +54,7 @@ public class Sprint2_Ding {
 			currentDay = cal.get(Calendar.DATE);
 			currentMonth = cal.get(Calendar.MONTH);
 			currentYear = cal.get(Calendar.YEAR);
-			if(!indiO.getBirthDate().isEmpty()){
+			if(indiO.getBirthDate()!= null){
 				String birth = indiO.getBirthDate();
 				int birthYear, birthMon, birthDay;
 				String []birthNextLine = birth.split("\\s+") ;
@@ -99,7 +99,7 @@ public class Sprint2_Ding {
 			currentDay = cal.get(Calendar.DATE);
 			currentMonth = cal.get(Calendar.MONTH);
 			currentYear = cal.get(Calendar.YEAR);
-			if(!indiO.getDeathDate().isEmpty()){
+			if(indiO.getDeathDate() != null){
 				String death = indiO.getDeathDate();
 				int deathYear, deathMon, deathDay;
 				String []deathNextLine = death.split("\\s+") ;
@@ -144,7 +144,7 @@ public class Sprint2_Ding {
 			currentDay = cal.get(Calendar.DATE);
 			currentMonth = cal.get(Calendar.MONTH);
 			currentYear = cal.get(Calendar.YEAR);
-			if(!famO.getWeddingDate().isEmpty()){
+			if(famO.getWeddingDate() != null){
 				String Wedd = famO.getWeddingDate();
 				int weddYear, weddMon, weddDay;
 				String []weddNextLine = Wedd.split("\\s+") ;
@@ -189,7 +189,7 @@ public class Sprint2_Ding {
 			currentDay = cal.get(Calendar.DATE);
 			currentMonth = cal.get(Calendar.MONTH);
 			currentYear = cal.get(Calendar.YEAR);
-			if(!famO.getDivorceDate().isEmpty()){
+			if(famO.getDivorceDate() != null){
 				String Divor = famO.getDivorceDate();
 				int divYear, divMon, divDay;
 				String []divNextLine = Divor.split("\\s+") ;
@@ -229,7 +229,7 @@ public class Sprint2_Ding {
 	public String checkBirthBeforeDeath(Individual indiO){
 		try{
 			String res ="";
-			if(!indiO.getBirthDate().isEmpty() && !indiO.getDeathDate().isEmpty()){
+			if(indiO.getBirthDate() != null && indiO.getDeathDate() != null){
 				
 				String birth = indiO.getBirthDate();
 				int birthYear,birthMon,birthDay;  
@@ -266,7 +266,7 @@ public class Sprint2_Ding {
 					res = "Data Invalid Report: Birth Date is behind Death Date";
 				}
 			}
-			else if(indiO.getBirthDate().isEmpty() && !indiO.getDeathDate().isEmpty()){
+			else if(indiO.getBirthDate() == null && indiO.getDeathDate() != null){
 				res = "Data Invalid Report: Individual has a death date, no birth date";
 			}
 			else{
