@@ -47,6 +47,13 @@ public class Sprint4_Zhu {
 						}
 					}
 				}
+				else if(maryear == currentYear) {
+					if(marmon == maxMon && marmon==1&&currentMon==12) {
+						if(marday<= maxDay) {
+							s = "Upcoming marriage anniversaries is: " + fam.getWeddingDate();
+						}
+					}
+				}
 			}
 		}
 		catch(Exception e){   //avoid no marriage data.
