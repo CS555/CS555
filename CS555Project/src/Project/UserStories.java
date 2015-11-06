@@ -57,7 +57,7 @@ public class UserStories {
 		return s.checkMarriageAfter14(individualObject);
 	}
 	
-	public List<String> Spr4_Ding_US38(Individual individualObject){
+	public String Spr4_Ding_US38(Individual individualObject){
 		Sprint4_Ding s = new Sprint4_Ding();
 		return s.checkUpcomingBirthdays(individualObject);
 	}
