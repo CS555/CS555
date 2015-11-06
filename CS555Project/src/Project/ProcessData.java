@@ -266,6 +266,10 @@ public class ProcessData {
 					s.add(res6);
 				}
 				
+				String res7 = ustor.Spr4_Zhu_U39(famO1);
+				if(!res7.equals("")) {
+					s.add(res7);
+				}
 				
 				for(int j = 0; j < families.size(); j++){
 					Family famO2 = families.get(j);
