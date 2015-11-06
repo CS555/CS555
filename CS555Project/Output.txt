@@ -4,60 +4,77 @@ ID: @I1@
 Name: A /A/
 Age: -25
 Data Invalid Report: Birth Date is behind Current Date
+Individual is not married yet
 
 ID: @I2@
 Name: C /C/
 Age: 45
+Individual is not married yet
 Data Invalid Report: Same individual birth date 1 FEB 1970 with Name: C /C/null
 
 ID: @I3@
 Name: B /B/
 Age: 45
+Individual is not married yet
 Data Invalid Report: Same individual birth date 1 FEB 1970 with Name: B /B/null
 
 ID: @I4@
 Name: E /E/
 Age: 59
 Data Invalid Report: Birth Date is behind Death Date
+Individual is not married yet
 
 ID: @I5@
 Name: D /F/
 Age: 226
 Data Invalid Report: This individual's age is greater than 150
+Individual is not married yet
 
 ID: @I6@
 Name: F /F/
 Age: 49
+Individual is not married yet
 
 ID: @I7@
 Name: G /G/
 Age: 47
+Individual is not married yet
+Upcoming birthday:G /G/ 17 NOV 1967
 
 ID: @I8@
 Name: H /H/
 Age: 14
+Individual is not married yet
+Upcoming birthday:H /H/ 17 NOV 2000
 
 ID: @I9@
 Name: I /I/
 Age: 26
+Individual is not married yet
 
 ID: @I10@
 Name: J /J/
 Age: 24
+Individual is not married yet
+Upcoming birthday:J /J/ 17 NOV 1990
 
 ID: @I11@
 Name: K /K/
 Age: 23
+Individual is not married yet
 Data Invalid Report: Same individual ID @I11 with name: K /K/W /W/
 
 ID: @I12@
 Name: L /L/
 Age: 49
+Individual is not married yet
+Upcoming birthday:L /L/ 27 NOV 1965
 
 ID: @I11@
 Name: W /W/
 Age: 4
 Data Invalid Report: Birth Date is behind Wedding Date
+Data Invalid Report: Marriage is before 14 years old
 Data Invalid Report: Same individual ID @I11 with name: W /W/K /K/
 
 
@@ -67,10 +84,11 @@ Family Info
 ID:@F1@
 Husband: H /H/
 Wife: A /A/
-Wedding Date :18 AUG 1999
+Wedding Date :29 NOV 1999
 Data Invalid Report: Husband(I8) in family F1 is female
 Data Invalid Report: Wife(I1) in family F1 is male
-Data Invalid Report: Same marriage date 18 AUG 1999
+Upcoming marriage anniversaries is: 29 NOV 1999
+Data Invalid Report: Same marriage date 29 NOV 1999
 
 ID:@F2@
 Husband: C /C/
@@ -95,8 +113,9 @@ Data Invalid Report: One husband(@I7@) two wife
 ID:@F6@
 Husband: G /G/
 Wife: L /L/
-Wedding Date :18 AUG 1999
-Data Invalid Report: Same marriage date 18 AUG 1999
+Wedding Date :29 NOV 1999
+Upcoming marriage anniversaries is: 29 NOV 1999
+Data Invalid Report: Same marriage date 29 NOV 1999
 Data Invalid Report: One husband(@I7@) two wife
 
 ID:@F8@

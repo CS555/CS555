@@ -90,4 +90,12 @@ public class UserStories {
 		Sprint3_Zhu s = new Sprint3_Zhu();
 		return s.CurrectGender(fam,ind1,ind2);
 	}
+	public String Spr4_Zhu_U39(Family fam) {
+		Sprint4_Zhu s = new Sprint4_Zhu();
+		return s.ListUpAnniver(fam);
+	}
+	public String Spr4_Zhu_U35(Individual ind1) {
+		Sprint4_Zhu s = new Sprint4_Zhu();
+		return s.ListRecBir(ind1);
+	}
 }
