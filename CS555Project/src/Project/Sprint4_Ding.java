@@ -6,7 +6,9 @@ import Data.Individual;
 
 public class Sprint4_Ding {
 	
+	//use to process the month value
 	Helper helper = new Helper();
+	
 	//sprint 4
 	//check the individual if he or she was 14 years old or older when he or she was married
 	public String checkMarriageAfter14(Individual indiO){
