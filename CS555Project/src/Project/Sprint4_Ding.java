@@ -1,13 +1,14 @@
 package Project;
 
-import java.util.Calendar;
 import java.util.*;
 
 import Data.Individual;
 
 public class Sprint4_Ding {
 	
+	//use to process the month value
 	Helper helper = new Helper();
+	
 	//sprint 4
 	//check the individual if he or she was 14 years old or older when he or she was married
 	public String checkMarriageAfter14(Individual indiO){
@@ -55,12 +56,6 @@ public class Sprint4_Ding {
 					res = "Data Invalid Report: Marriage is before 14 years old";
 				}
 			}
-			else if(indiO.getBirthDate() == null && indiO.getWeddingDate() != null){
-				res = "Data Invalid Report: Individual has a wedding date, no birth date";
-			}
-			else if(indiO.getBirthDate() != null && indiO.getWeddingDate() == null){
-				res = "Individual is not married yet";
-			}
 			return res;
 		}
 		catch(Exception e){
@@ -70,12 +65,12 @@ public class Sprint4_Ding {
 	
 	//sprint 4
 	//List upcoming birthdays within next 30 days.
-	public List<String> checkUpcomingBirthdays(Individual indiO){
-		List<String> res = new ArrayList<String>();
+	public String checkUpcomingBirthdays(Individual indiO){
+		String res = "";
 		try{
 			if(indiO.getBirthDate() != null)
 			{
-				Calendar cal = Calendar.getInstance();
+				Calendar cal1 = Calendar.getInstance();
 				String s = indiO.getBirthDate();
 				int currentYear,currentMon,currentDay;
 				int birthYear,birthMon,birthDay;                              
@@ -83,30 +78,36 @@ public class Sprint4_Ding {
 				birthDay = Integer.parseInt(nextLine[0]);
 				birthMon = helper.transfMon(nextLine[1]);
 				birthYear = Integer.parseInt(nextLine[2]);
-				currentYear = cal.get(Calendar.YEAR);
-				currentMon = cal.get(Calendar.MONTH)+1;
-				currentDay=cal.get(Calendar.DATE); 		
-				if (currentYear > birthYear) { 
-					if(currentMon==12 && birthMon==1){
-						if(currentDay >= birthDay){
-							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
+				
+				Calendar cal=new GregorianCalendar();
+				cal.add(Calendar.DATE, 30);
+				int maxMon,maxDay;                             
+				maxMon = cal.get(Calendar.MONTH)+1;
+				maxDay=cal.get(Calendar.DATE);
+				
+				currentYear = cal1.get(Calendar.YEAR);
+				currentMon = cal1.get(Calendar.MONTH)+1;
+				currentDay=cal1.get(Calendar.DATE); 		
+				if(birthYear < currentYear) {
+					if(birthMon == currentMon) {
+						if(birthDay>currentDay)
+							res = "Upcoming birthday is: " + indiO.getBirthDate();
+					}
+					if(birthMon == currentMon+1) {
+						if(birthDay<= maxDay) {
+							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
-					else if(birthMon - currentMon == 0){
-						if(currentDay <= birthDay){
-							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
+					if(birthMon == maxMon && birthMon==1&&currentMon==12) {
+						if(birthDay<= maxDay) {
+							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
-					else if(birthMon - currentMon == 1){
-						if(currentDay >= birthDay){
-							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
-						}
-					}
-			    }
-				else if(currentYear == birthYear){
-					if(currentMon==12 && birthMon==1){
-						if(currentDay >= birthDay){
-							res.add("Upcoming birthday:"+indiO.getName()+" "+indiO.getBirthDate());
+				}
+				else if(birthYear == currentYear) {
+					if(birthMon == maxMon && birthMon==1&&currentMon==12) {
+						if(birthDay<= maxDay) {
+							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
 				}

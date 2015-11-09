@@ -184,13 +184,13 @@ public class ProcessData {
 				// sprint 4 output
 				// only give error report if data is invalid
 				String res6 = ustor.Spr4_Ding_US10(indiO1);
-				List<String> list_name = ustor.Spr4_Ding_US38(indiO1);
+				String res7 = ustor.Spr4_Ding_US38(indiO1);
 				
 				if(!res6.equals("")){
 					s.add(res6);
 				}
-				if(!list_name.isEmpty()){
-					s.addAll(list_name);
+				if(!res7.equals("")){
+					s.add(res7);
 				}
 				
 				for(int j = 0; j < individuals.size(); j++){
