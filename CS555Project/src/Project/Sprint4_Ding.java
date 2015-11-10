@@ -6,7 +6,7 @@ import Data.Individual;
 
 public class Sprint4_Ding {
 	
-	//use to process the month value
+	//use to process the month from the gedcom file
 	Helper helper = new Helper();
 	
 	//sprint 4
@@ -14,7 +14,6 @@ public class Sprint4_Ding {
 	public String checkMarriageAfter14(Individual indiO){
 		try{
 			String res ="";
-			
 			if(indiO.getBirthDate() != null && indiO.getWeddingDate() != null){
 				String birth = indiO.getBirthDate();
 				int birthYear,birthMon,birthDay;  
@@ -90,22 +89,22 @@ public class Sprint4_Ding {
 				currentDay=cal1.get(Calendar.DATE); 		
 				if(birthYear < currentYear) {
 					if(birthMon == currentMon) {
-						if(birthDay>currentDay)
+						if(birthDay > currentDay)
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 					}
 					if(birthMon == currentMon+1) {
-						if(birthDay<= maxDay) {
+						if(birthDay <= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
-					if(birthMon == maxMon && birthMon==1&&currentMon==12) {
+					if(birthMon == maxMon && birthMon==1 && currentMon==12) {
 						if(birthDay<= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
 				}
 				else if(birthYear == currentYear) {
-					if(birthMon == maxMon && birthMon==1&&currentMon==12) {
+					if(birthMon == maxMon && birthMon==1 && currentMon==12) {
 						if(birthDay<= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
