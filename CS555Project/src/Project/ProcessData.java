@@ -154,7 +154,7 @@ public class ProcessData {
 				s.add("Name: " + indiO1.getName());
 				s.add(ustor.Spr1_Zhu_U27(indiO1));
 					
-				/*************test for sprint***********************/
+				/*************output for sprint***********************/
 				// sprint 2 output
 				// only give error report if data is invalid
 				String res1 = ustor.Spr2_D_B(indiO1);
@@ -205,7 +205,6 @@ public class ProcessData {
 						if(!tmp1.equals("")) s.add(tmp1);
 					}
 				}
-				
 			}
 		}
 		return s;
@@ -231,7 +230,7 @@ public class ProcessData {
 				}
 				catch(Exception e){}
 				
-				/*************test for sprint***********************/
+				/*************output for sprint***********************/
 				// sprint 2 output
 				// only give error report if data is invalid
 				String res1 = ustor.Spr2_D_M(famO1);

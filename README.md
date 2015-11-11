@@ -53,3 +53,12 @@ Update Date: 11/4/2015
 
 Bug fixed
 Update Date: 11/5/2015
+
+Update on Sprint 4
+Update Date: 11/6/2015
+
+Update on Sprint 4
+Update Date: 11/9/2015
+
+Update on Sprint 4
+Update Date: 11/10/2015
