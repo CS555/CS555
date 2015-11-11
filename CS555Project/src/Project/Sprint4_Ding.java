@@ -63,7 +63,7 @@ public class Sprint4_Ding {
 	}
 	
 	//sprint 4
-	//List upcoming birthdays within next 30 days.
+	//List upcoming birthdays within next 30 days by using calendar function.
 	public String checkUpcomingBirthdays(Individual indiO){
 		String res = "";
 		try{
@@ -79,6 +79,8 @@ public class Sprint4_Ding {
 				birthYear = Integer.parseInt(nextLine[2]);
 				
 				Calendar cal=new GregorianCalendar();
+				
+				//add 30 days to current days
 				cal.add(Calendar.DATE, 30);
 				int maxMon,maxDay;                             
 				maxMon = cal.get(Calendar.MONTH)+1;
@@ -92,12 +94,12 @@ public class Sprint4_Ding {
 						if(birthDay > currentDay)
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 					}
-					if(birthMon == currentMon+1) {
+					else if(birthMon == currentMon+1) {
 						if(birthDay <= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
-					if(birthMon == maxMon && birthMon==1 && currentMon==12) {
+					else if(birthMon == maxMon && birthMon==1 && currentMon==12) {
 						if(birthDay<= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
