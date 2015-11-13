@@ -6,7 +6,8 @@ import Data.Individual;
 
 public class Sprint4_Ding {
 	
-	//use to process the month from the gedcom file
+	//read string file from GEDCOM where months were described in abbreviation
+	//use helper class to process the month from the GEDCOM file
 	Helper helper = new Helper();
 	
 	//sprint 4
@@ -100,14 +101,14 @@ public class Sprint4_Ding {
 						}
 					}
 					else if(birthMon == maxMon && birthMon==1 && currentMon==12) {
-						if(birthDay<= maxDay) {
+						if(birthDay <= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
 				}
 				else if(birthYear == currentYear) {
 					if(birthMon == maxMon && birthMon==1 && currentMon==12) {
-						if(birthDay<= maxDay) {
+						if(birthDay <= maxDay) {
 							res = "Upcoming birthday is: " + indiO.getBirthDate();
 						}
 					}
