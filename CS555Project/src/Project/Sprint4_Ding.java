@@ -12,6 +12,7 @@ public class Sprint4_Ding {
 	
 	//sprint 4
 	//check the individual if he or she was 14 years old or older when he or she was married
+	// only invalid data will be output
 	public String checkMarriageAfter14(Individual indiO){
 		try{
 			String res ="";
