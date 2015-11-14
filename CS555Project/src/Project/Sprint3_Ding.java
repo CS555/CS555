@@ -6,7 +6,10 @@ import Data.Individual;
 
 public class Sprint3_Ding {
 	
+	//read string file from GEDCOM where months were described in abbreviation
+	//use helper class to process the month from the GEDCOM file
 	Helper helper = new Helper();
+	
 	//check birthdate before marriage date
 	//only output invalid data
 	public String checkBirthBeforeMarr(Individual indiO){

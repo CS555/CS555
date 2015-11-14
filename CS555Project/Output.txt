@@ -51,7 +51,6 @@ Upcoming birthday is: 17 NOV 1990
 ID: @I11@
 Name: K /K/
 Age: 0
-Data Invalid Report: Birth Date is behind Current Date
 K /K/ was born in last 30 days
 Data Invalid Report: Same individual ID @I11 with name: K /K/W /W/
 
