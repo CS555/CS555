@@ -11,10 +11,10 @@ public class PrintData {
 		ProcessData ged = new ProcessData(); 
 		ged.readFile("My Family.ged"); 
 		
-		// output result for sprint 1 and sprint 2 to output.txt file
+		// output result for sprint 1, sprint 2, sprint 3 and sprint 4 to output.txt file
 		Vector<String> s = new Vector<String>();
 		
-		// get the individuals data and test
+		// get the individuals data
 		s.add("Individuals Info:");
 		s.addAll(ged.print_individual());
 		PrintWriter writer = new PrintWriter("Output.txt", "UTF-8");
@@ -28,7 +28,7 @@ public class PrintData {
 		s.add("");
 		s.add("");
 		
-		// get the family data and test
+		// get the family data
 		s.add("Family Info");
 		s.addAll(ged.print_family());
 		while(s.size()>0)

@@ -5,61 +5,29 @@ import Data.Individual;
 import java.util.Calendar;
 
 public class Sprint2_Ding {
-	//sprint 2
-	public int setMon(String str){
-		int mon=0;
-		if(str.equals("JAN")){
-			mon = 1;
-		}
-		else if(str.equals("FEB")){
-			mon = 2;
-		}
-		else if(str.equals("MAR")){
-			mon = 3;
-		}
-		else if(str.equals("APR")){
-			mon = 4;
-		}
-		else if(str.equals("MAY")){
-			mon = 5;
-		}
-		else if(str.equals("JUN")){
-			mon = 6;
-		}
-		else if(str.equals("JUL")){
-			mon = 7;
-		}
-		else if(str.equals("AUG")){
-			mon = 8;
-		}
-		else if(str.equals("SEP")){
-			mon = 9;
-		}
-		else if(str.equals("OCT")){
-			mon = 10;
-		}
-		else if(str.equals("NOV")){
-			mon = 11;
-		}
-		else
-			mon = 12;
-		return mon;
-	}
 	
+	//read string file from GEDCOM where months were described in abbreviation
+	//use helper class to process the month from the GEDCOM file
+	Helper helper = new Helper();
+	
+	
+	//sprint 2
+	//check birth date before current date
+	// only invalid data will be output
 	public String checkBirthDateBeforeCurrentForIndi(Individual indiO){
 		try{
 			String res = "";
 			Calendar cal = Calendar.getInstance();
 			int currentDay, currentMonth, currentYear;
 			currentDay = cal.get(Calendar.DATE);
-			currentMonth = cal.get(Calendar.MONTH);
+			currentMonth = cal.get(Calendar.MONTH)+1;
 			currentYear = cal.get(Calendar.YEAR);
 			if(indiO.getBirthDate()!= null){
 				String birth = indiO.getBirthDate();
 				int birthYear, birthMon, birthDay;
 				String []birthNextLine = birth.split("\\s+") ;
 				birthDay = Integer.parseInt(birthNextLine[0]);
-				birthMon = setMon(birthNextLine[1]);
+				birthMon = helper.transfMon(birthNextLine[1]);
 				birthYear = Integer.parseInt(birthNextLine[2]);			
 				if(birthYear < currentYear){
 					res = "";
@@ -91,6 +59,8 @@ public class Sprint2_Ding {
 		}
 	}
 	
+	//check death date before current date
+	// only invalid data will be output
 	public String checkDeathDateBeforeCurrentForIndi(Individual indiO){
 		try{
 			String res = "";
@@ -104,7 +74,7 @@ public class Sprint2_Ding {
 				int deathYear, deathMon, deathDay;
 				String []deathNextLine = death.split("\\s+") ;
 				deathDay = Integer.parseInt(deathNextLine[0]);
-				deathMon = setMon(deathNextLine[1]);
+				deathMon = helper.transfMon(deathNextLine[1]);
 				deathYear = Integer.parseInt(deathNextLine[2]);			
 				if(deathYear < currentYear){
 					res = "";
@@ -136,6 +106,8 @@ public class Sprint2_Ding {
 		}
 	}
 	
+	// check marriage date before current date
+	// only invalid data will be output
 	public String checkMarriageDateBeforeCurrentForFam(Family famO){
 		try{
 			String res = "";
@@ -149,7 +121,7 @@ public class Sprint2_Ding {
 				int weddYear, weddMon, weddDay;
 				String []weddNextLine = Wedd.split("\\s+") ;
 				weddDay = Integer.parseInt(weddNextLine[0]);
-				weddMon = setMon(weddNextLine[1]);
+				weddMon = helper.transfMon(weddNextLine[1]);
 				weddYear = Integer.parseInt(weddNextLine[2]);			
 				if(weddYear < currentYear){
 					res = "";
@@ -181,6 +153,8 @@ public class Sprint2_Ding {
 		}
 	}
 	
+	// check divorce date before current date
+	// only invalid data will be output
 	public String checkDivorceDateBeforeCurrentForFam(Family famO){
 		try{
 			String res = "";
@@ -194,7 +168,7 @@ public class Sprint2_Ding {
 				int divYear, divMon, divDay;
 				String []divNextLine = Divor.split("\\s+") ;
 				divDay = Integer.parseInt(divNextLine[0]);
-				divMon = setMon(divNextLine[1]);
+				divMon = helper.transfMon(divNextLine[1]);
 				divYear = Integer.parseInt(divNextLine[2]);			
 				if(divYear < currentYear){
 					res = "";
@@ -226,6 +200,8 @@ public class Sprint2_Ding {
 		}
 	}
 	
+	// check birth date before death date
+	// only invalid data will be output
 	public String checkBirthBeforeDeath(Individual indiO){
 		try{
 			String res ="";
@@ -239,8 +215,8 @@ public class Sprint2_Ding {
 				String []deanextLine = (death.split("\\s+"));
 				birthDay = Integer.parseInt(birnextLine[0]);
 				deathDay = Integer.parseInt(deanextLine[0]);
-				birthMon = setMon(birnextLine[1]);
-				deathMon = setMon(deanextLine[1]);
+				birthMon = helper.transfMon(birnextLine[1]);
+				deathMon = helper.transfMon(deanextLine[1]);
 				birthYear = Integer.parseInt(birnextLine[2]);
 				deathYear = Integer.parseInt(deanextLine[2]);
 				if(birthYear < deathYear){
