@@ -193,6 +193,12 @@ public class ProcessData {
 					s.add(res7);
 				}
 				
+				String res8 = ustor.Spr4_Zhu_U35(indiO1);
+				
+				if(!res8.equals("")){
+					s.add(res8);
+				}
+				
 				for(int j = 0; j < individuals.size(); j++){
 					Individual indiO2 = individuals.get(j);
 					if (i != j){

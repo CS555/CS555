@@ -69,6 +69,51 @@ public class Sprint4_Zhu {
 	public String ListRecBir(Individual ind)
 	{
 		String s="";
+		try {
+			if(ind.getBirthDate()!=null) {
+				String indD = ind.getBirthDate();
+				int indYear,indMon,indDay;
+				String []indline = (indD.split("\\s+"));		
+				indYear = Integer.parseInt(indline[2]);
+				indMon = help.transfMon(indline[1]);
+				indDay = Integer.parseInt(indline[0]);
+				
+				Calendar cal=new GregorianCalendar();
+				cal.add(Calendar.DATE, -30);
+				int minMon,minDay;                             
+				minMon = cal.get(Calendar.MONTH)+1;
+				minDay=cal.get(Calendar.DATE);
+				//minYear = cal.get(Calendar.YEAR);
+				
+				Calendar cal1 = Calendar.getInstance();
+				int currentYear,currentMon,currentDay;                             
+				currentYear = cal1.get(Calendar.YEAR);
+				currentMon = cal1.get(Calendar.MONTH)+1;
+				currentDay=cal1.get(Calendar.DATE); 	
+				
+				if(indYear == currentYear) {
+					if(indMon == currentMon) {
+						if(indDay<currentDay)
+							s = ind.getName() + " was born in last 30 days";
+					}
+					if(indMon == currentMon-1) {
+						if(indDay>= minDay) {
+							s = ind.getName() + " was born in last 30 days";
+						}
+					}
+				}
+				else if(indYear == currentYear-1) {
+					if(indMon == minMon && indMon==12&&currentMon==1) {
+						if(indDay>= minDay) {
+							s = ind.getName() + " was born in last 30 days";
+						}
+					}
+				}
+			}
+		}
+		catch(Exception e){   //avoid no birth data.
+			return s;
+		}		
 		return s;
 	}
 }
