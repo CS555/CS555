@@ -67,7 +67,7 @@ public class Sprint2_Ding {
 			Calendar cal = Calendar.getInstance();
 			int currentDay, currentMonth, currentYear;
 			currentDay = cal.get(Calendar.DATE);
-			currentMonth = cal.get(Calendar.MONTH);
+			currentMonth = cal.get(Calendar.MONTH)+1;
 			currentYear = cal.get(Calendar.YEAR);
 			if(indiO.getDeathDate() != null){
 				String death = indiO.getDeathDate();
@@ -114,7 +114,7 @@ public class Sprint2_Ding {
 			Calendar cal = Calendar.getInstance();
 			int currentDay, currentMonth, currentYear;
 			currentDay = cal.get(Calendar.DATE);
-			currentMonth = cal.get(Calendar.MONTH);
+			currentMonth = cal.get(Calendar.MONTH)+1;
 			currentYear = cal.get(Calendar.YEAR);
 			if(famO.getWeddingDate() != null){
 				String Wedd = famO.getWeddingDate();
@@ -161,7 +161,7 @@ public class Sprint2_Ding {
 			Calendar cal = Calendar.getInstance();
 			int currentDay, currentMonth, currentYear;
 			currentDay = cal.get(Calendar.DATE);
-			currentMonth = cal.get(Calendar.MONTH);
+			currentMonth = cal.get(Calendar.MONTH)+1;
 			currentYear = cal.get(Calendar.YEAR);
 			if(famO.getDivorceDate() != null){
 				String Divor = famO.getDivorceDate();

@@ -32,12 +32,12 @@ Age: 49
 ID: @I7@
 Name: G /G/
 Age: 47
-Upcoming birthday is: 17 NOV 1967
+Upcoming birthday is: 27 NOV 1967
 
 ID: @I8@
 Name: H /H/
 Age: 14
-Upcoming birthday is: 17 NOV 2000
+Upcoming birthday is: 28 NOV 2000
 
 ID: @I9@
 Name: I /I/
@@ -64,6 +64,7 @@ Name: W /W/
 Age: 4
 Data Invalid Report: Birth Date is behind Wedding Date
 Data Invalid Report: Marriage is before 14 years old
+Upcoming birthday is: 15 DEC 2010
 Data Invalid Report: Same individual ID @I11 with name: W /W/K /K/
 
 

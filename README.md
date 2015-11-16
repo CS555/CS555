@@ -62,3 +62,15 @@ Update Date: 11/9/2015
 
 Update on Sprint 4
 Update Date: 11/10/2015
+
+Update on Sprint 4
+Update Date: 11/11/2015
+
+Update on Sprint 4
+Update Date: 11/12/2015
+
+Update on Sprint 4
+Update Date: 11/13/2015
+
+Bug fixed
+Update Date: 11/14/2015
