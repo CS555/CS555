@@ -45,8 +45,7 @@ Age: 26
 
 ID: @I10@
 Name: J /J/
-Age: 24
-Upcoming birthday is: 17 NOV 1990
+Age: 25
 
 ID: @I11@
 Name: K /K/
