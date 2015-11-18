@@ -7,6 +7,7 @@ import Data.Individual;
 public class Sprint1_Zhu {
 	
 	Helper help = new Helper();
+	
 	// test Unique name and birth date
 	public String uniqueNaBir(Individual ind1,Individual ind2) {
 		String s="";
