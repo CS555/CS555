@@ -6,6 +6,8 @@ import Data.Individual;
 public class Sprint3_Zhu {
 	
 	Helper help = new Helper();
+	
+	//check Divorce before death
 	public String DivorBeforeDeath(Family fam, Individual ind, Individual ind1)
 	{
 		String s="";
@@ -63,6 +65,7 @@ public class Sprint3_Zhu {
 		}		
 	}
 	
+	// check correct gender for role
 	public String CurrectGender(Family fam, Individual ind, Individual ind1)
 	{
 		String s="";

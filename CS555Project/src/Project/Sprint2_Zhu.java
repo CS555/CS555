@@ -6,6 +6,8 @@ import Data.Individual;
 public class Sprint2_Zhu {
 	
 	Helper help = new Helper();
+	
+	//check Marriage before divorce
 	public String MarrBeforeDivo(Family fam)
 	{
 		String s="";
@@ -43,6 +45,7 @@ public class Sprint2_Zhu {
 		}
 	}
 	
+	//check Marriage before death
 	public String MarrBeforeDeath(Family fam, Individual ind, Individual ind1)
 	{
 		String s="";

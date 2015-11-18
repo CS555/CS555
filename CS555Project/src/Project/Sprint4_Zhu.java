@@ -8,10 +8,11 @@ import Data.Family;
 import Data.Individual;
 
 
-
-//this function We considerd the leap year and the different total days in each month
 public class Sprint4_Zhu {
 	Helper help = new Helper();
+	
+	//List upcoming anniversaries
+	//this function We considerd the leap year and the different total days in each month
 	public String ListUpAnniver(Family fam) {
 		String s="";
 		try {
@@ -62,10 +63,11 @@ public class Sprint4_Zhu {
 		catch(Exception e){   //avoid no marriage data.
 			return s;
 		}		
-		
-		
 		return s;
 	}
+	
+	//List recent births
+	//this function We considerd the leap year and the different total days in each month
 	public String ListRecBir(Individual ind)
 	{
 		String s="";
